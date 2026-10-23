@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-23T22:38:47.841Z",
- "status": "Mining coal → selling into the GE bid",
+ "updatedAt": "2026-10-23T22:49:40.332Z",
+ "status": "Farming bones & imp beads → GE bids",
  "stats": {
   "totalLevel": 460,
   "combatLevel": 35,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 3767,
+   "qty": 7517,
    "where": "inventory",
    "mark": 1,
-   "value": 3767
+   "value": 7517
   },
   {
    "item": "Feather",
@@ -118,13 +118,6 @@
    "value": 100
   },
   {
-   "item": "Bronze scimitar",
-   "qty": 1,
-   "where": "inventory",
-   "mark": 27,
-   "value": 27
-  },
-  {
    "item": "Bronze sword",
    "qty": 1,
    "where": "bank",
@@ -172,6 +165,13 @@
    "where": "bank",
    "mark": 2,
    "value": 4
+  },
+  {
+   "item": "Shortbow",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 1,
+   "value": 1
   }
  ],
  "bank": [
@@ -350,6 +350,54 @@
    "total": 2979,
    "counterparty": "GE",
    "note": "tax 156gp"
+  },
+  {
+   "id": 11,
+   "t": "2026-10-23T22:45:05.744Z",
+   "venue": "player",
+   "side": "buy",
+   "item": "Uncut sapphire",
+   "qty": 1,
+   "price": 500,
+   "total": -500,
+   "counterparty": "Wpukysjhu",
+   "note": "direct trade"
+  },
+  {
+   "id": 12,
+   "t": "2026-10-23T22:47:56.085Z",
+   "venue": "player",
+   "side": "buy",
+   "item": "Uncut emerald",
+   "qty": 1,
+   "price": 500,
+   "total": -500,
+   "counterparty": "Wpukysjhu",
+   "note": "direct trade"
+  },
+  {
+   "id": 13,
+   "t": "2026-10-23T22:49:36.341Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Uncut sapphire",
+   "qty": 1,
+   "price": 2375,
+   "total": 2375,
+   "counterparty": "GE",
+   "note": "tax 125gp"
+  },
+  {
+   "id": 14,
+   "t": "2026-10-23T22:49:36.342Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Uncut emerald",
+   "qty": 1,
+   "price": 2375,
+   "total": 2375,
+   "counterparty": "GE",
+   "note": "tax 125gp"
   }
  ],
  "history": [
@@ -367,6 +415,21 @@
    "t": "2026-10-23T22:38:47.840Z",
    "coins": 3792,
    "netWorth": 7638
+  },
+  {
+   "t": "2026-10-23T22:45:09.601Z",
+   "coins": 3292,
+   "netWorth": 9612
+  },
+  {
+   "t": "2026-10-23T22:47:59.744Z",
+   "coins": 2792,
+   "netWorth": 11612
+  },
+  {
+   "t": "2026-10-23T22:49:40.331Z",
+   "coins": 7542,
+   "netWorth": 11362
   }
  ],
  "journal": [
@@ -389,6 +452,26 @@
   {
    "t": "2026-10-23T22:38:47.841Z",
    "msg": "Sold spare inventory into live GE bids. Coins 3792, net worth 7638gp."
+  },
+  {
+   "t": "2026-10-23T22:42:36.229Z",
+   "msg": "New loop: kill chicken|cow|imp near (3240, 3292) for bones and beads, sell into GE bids."
+  },
+  {
+   "t": "2026-10-23T22:45:05.745Z",
+   "msg": "First player trade: bought 1 Uncut sapphire from Wpukysjhu for 500gp. GE bid is 2,500."
+  },
+  {
+   "t": "2026-10-23T22:45:24.351Z",
+   "msg": "New loop: kill chicken|cow|imp near (3240, 3292) for bones and beads, sell into GE bids."
+  },
+  {
+   "t": "2026-10-23T22:47:56.086Z",
+   "msg": "Bought 1 Uncut emerald from Wpukysjhu for 500gp in a direct trade. GE bid is 2,500."
+  },
+  {
+   "t": "2026-10-23T22:49:40.332Z",
+   "msg": "Sold spare inventory into live GE bids. Coins 7542, net worth 11362gp."
   }
  ],
  "geSeen": {
@@ -431,6 +514,16 @@
    "filled": 19,
    "gross": 3135,
    "tax": 156
+  },
+  "30195": {
+   "filled": 1,
+   "gross": 2500,
+   "tax": 125
+  },
+  "30196": {
+   "filled": 1,
+   "gross": 2500,
+   "tax": 125
   }
  }
 }
