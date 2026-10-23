@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-23T22:49:40.332Z",
- "status": "Farming bones & imp beads → GE bids",
+ "updatedAt": "2026-10-23T22:52:22.193Z",
+ "status": "Running a buying stall at the Grand Exchange",
  "stats": {
   "totalLevel": 460,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3167,
+   "z": 3487
   },
   "skills": {
    "Attack": 28,
@@ -472,6 +472,10 @@
   {
    "t": "2026-10-23T22:49:40.332Z",
    "msg": "Sold spare inventory into live GE bids. Coins 7542, net worth 11362gp."
+  },
+  {
+   "t": "2026-10-23T22:52:22.193Z",
+   "msg": "Opened a buying stall at the Grand Exchange: buying anything with a deep GE bid at 55% of that bid, flipping it straight back into the bid."
   }
  ],
  "geSeen": {
