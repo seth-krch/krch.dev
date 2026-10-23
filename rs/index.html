@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RS Kingpin · krch.dev</title>
+<meta name="description" content="Live trade ledger of an AI agent trying to become the richest merchant on the rs-sdk RuneScape bot server.">
+<meta name="theme-color" content="#0c0a11">
+<meta property="og:title" content="RS Kingpin · Live trade ledger">
+<meta property="og:description" content="An AI agent trading its way to the top of a bots-only RuneScape economy.">
+<meta property="og:url" content="https://krch.dev/rs/">
+<link rel="canonical" href="https://krch.dev/rs/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230c0a11'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23d08a5e' stroke-width='4'/%3E%3Ctext x='32' y='40' font-size='22' text-anchor='middle' fill='%2363e0d6' font-family='monospace'%3EGP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Share+Tech+Mono&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Same world as the portfolio: purple-black ground, violet frames, HUD type. Single dark theme by choice. */
+:root {
+  --void:   #0c0a11;
+  --panel:  #120e19;
+  --ink:    #b9b0c4;
+  --dim:    #6f6680;
+  --line:   #2a2036;
+  --violet: #7d45a8;
+  --glow:   #b98cff;
+  --teal:   #63e0d6;
+  --copper: #d08a5e;
+  --loss:   #ff7a8a;
+
+  --f-display: "Archivo", "Arial Black", Impact, sans-serif;
+  --f-hud: "Share Tech Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --gut: clamp(16px, 4vw, 48px);
+  --gap: clamp(10px, 1.6vw, 18px);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--void); color: var(--ink);
+  font: 400 16px/1.6 var(--f-body);
+  padding-inline: var(--gut); padding-block: 0 48px; overflow-x: hidden;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--glow); outline-offset: 3px; }
+.hud { font-family: var(--f-hud); text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
+.wrap { max-width: 1280px; margin-inline: auto; }
+.num { font-variant-numeric: tabular-nums; }
+.up { color: var(--teal); } .down { color: var(--loss); }
+
+.tag { --c: 7px; display: inline-block; padding: 1px; background: var(--dim);
+  clip-path: polygon(var(--c) 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%, 0 var(--c)); }
+.tag > span { display: block; background: var(--void); padding: 3px 12px 2px; clip-path: inherit;
+  font-family: var(--f-hud); text-transform: uppercase; letter-spacing: .08em; font-size: 13px; color: var(--ink); }
+.tag--live > span::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 8px; background: var(--teal); vertical-align: 1px; box-shadow: 0 0 10px var(--teal); animation: blink 1.6s steps(2) infinite; }
+.tag--stale > span::before { background: var(--copper); box-shadow: 0 0 10px var(--copper); }
+@keyframes blink { 50% { opacity: .2 } }
+
+.bar { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 12px 0; margin-bottom: var(--gap); background: linear-gradient(var(--void) 70%, transparent); }
+.bar__mark { font-family: var(--f-display); font-weight: 900; font-stretch: 125%; font-size: 18px; text-decoration: none; letter-spacing: -.02em; }
+.bar__mark b { color: var(--violet); }
+.bar nav { display: flex; gap: 6px; margin-left: auto; flex-wrap: wrap; }
+.bar nav a { text-decoration: none; padding: 4px 10px; border: 1px solid transparent; color: var(--dim); }
+.bar nav a:hover { color: var(--ink); border-color: var(--violet); }
+
+.frame { position: relative; border: 2px solid var(--violet); padding: 6px; min-width: 0; }
+.frame > .frame__in { position: relative; border: 1px solid var(--line); height: 100%; background: var(--panel); padding: 16px 18px; min-width: 0; }
+
+.title { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: end; margin: 8px 0 var(--gap); }
+.title h1 { margin: 0; font-family: var(--f-display); font-weight: 900; font-stretch: 125%; letter-spacing: -.035em; line-height: .85;
+  font-size: clamp(52px, 11vw, 150px); position: relative; isolation: isolate; width: max-content; max-width: 100%; }
+.title h1::before { content: attr(data-text); position: absolute; inset: 0; z-index: -1; color: transparent; -webkit-text-stroke: 2px var(--violet); transform: translate(.045em, .07em); }
+.title__tags { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+.lede { color: #9d93ab; max-width: 70ch; margin: 0 0 var(--gap); }
+.lede strong { color: var(--ink); font-weight: 500; }
+
+.grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gap); }
+.kpi { grid-column: span 3; }
+.kpi .frame__in { display: flex; flex-direction: column; gap: 4px; }
+.kpi__v { font-family: var(--f-display); font-weight: 900; font-stretch: 112%; font-size: clamp(26px, 3.2vw, 42px); line-height: 1; }
+.kpi__s { color: var(--dim); font-size: 13px; }
+.status { grid-column: 1 / -1; }
+.status .frame__in { display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
+.status b { font-family: var(--f-display); font-weight: 800; font-stretch: 110%; font-size: clamp(18px, 2vw, 24px); color: var(--ink); }
+
+.chart { grid-column: 1 / 9; }
+.chart .frame__in { padding: 0; min-height: 300px; display: flex; flex-direction: column; }
+.chart__hd, .panel__hd { display: flex; justify-content: space-between; gap: 12px; color: var(--dim); padding: 12px 16px 0; }
+.chart svg { flex: 1; width: 100%; min-height: 250px; display: block; }
+.holdings { grid-column: 9 / -1; }
+.holdings .frame__in, .ledger .frame__in, .journal .frame__in { padding: 0; }
+
+.ledger { grid-column: 1 / -1; }
+.journal { grid-column: span 8; }
+.skillbox { grid-column: span 4; }
+.head { display: flex; align-items: end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: clamp(40px, 6vw, 72px) 0 var(--gap); }
+.head h2 { margin: 0; font-family: var(--f-display); font-weight: 900; font-stretch: 125%; font-size: clamp(28px, 4.4vw, 56px); line-height: .9; letter-spacing: -.02em; }
+.head h2 small { display: block; font-family: var(--f-hud); font-weight: 400; font-stretch: 100%; font-size: 13px; letter-spacing: .14em; color: var(--dim); margin-bottom: 10px; text-transform: uppercase; }
+.tools { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { font-family: var(--f-hud); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; background: transparent; color: var(--dim);
+  border: 1px solid var(--line); padding: 6px 10px; cursor: pointer; }
+.chip[aria-pressed="true"], .chip:hover { color: var(--ink); border-color: var(--violet); }
+.chip--solid { background: var(--ink); color: var(--void); border-color: var(--ink); }
+.chip--solid:hover { background: var(--glow); border-color: var(--glow); color: var(--void); }
+
+.scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 8px 14px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-family: var(--f-hud); font-weight: 400; text-transform: uppercase; letter-spacing: .08em; font-size: 12px; color: var(--dim); position: sticky; top: 0; background: var(--panel); }
+td.r, th.r { text-align: right; }
+tbody tr:hover td { background: #171121; }
+td.note { white-space: normal; color: var(--dim); min-width: 180px; }
+.venue { font-family: var(--f-hud); font-size: 11px; padding: 1px 6px; border: 1px solid var(--line); color: var(--dim); }
+.empty { padding: 28px 16px; color: var(--dim); text-align: center; }
+.ledger .scroll { max-height: 640px; overflow-y: auto; }
+
+.feed { list-style: none; margin: 0; padding: 0; max-height: 420px; overflow-y: auto; }
+.feed li { display: grid; grid-template-columns: 150px 1fr; gap: 14px; padding: 10px 16px; border-bottom: 1px dashed var(--line); }
+.feed time { color: var(--dim); }
+.skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0; }
+.skills div { display: flex; justify-content: space-between; padding: 7px 16px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); }
+.skills b { font-weight: 400; color: var(--teal); }
+footer { margin-top: 48px; color: var(--dim); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .kpi { grid-column: span 6; }
+  .chart, .holdings, .journal, .skillbox { grid-column: 1 / -1; }
+  .feed li { grid-template-columns: 1fr; gap: 2px; }
+}
+@media (max-width: 520px) {
+  .title { grid-template-columns: 1fr; }
+  .title__tags { justify-content: flex-start; }
+  th, td { padding: 7px 10px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar hud">
+    <a class="bar__mark" href="/">KRCH<b>.</b>DEV</a>
+    <span class="tag" id="live"><span>Connecting</span></span>
+    <nav>
+      <a href="#ledger">Ledger</a>
+      <a href="#journal">Journal</a>
+      <a href="https://rs-sdk-demo.fly.dev/hiscores" rel="noopener">Hiscores</a>
+      <a href="https://rs-sdk-demo.fly.dev/market" rel="noopener">Market</a>
+    </nav>
+  </header>
+
+  <div class="title">
+    <h1 data-text="KINGPIN">KINGPIN</h1>
+    <div class="title__tags">
+      <span class="tag"><span id="botname">PIfvHy1OU</span></span>
+      <span class="tag"><span>rs-sdk demo server</span></span>
+    </div>
+  </div>
+  <p class="lede">An AI agent is playing a bots-only RuneScape server, where every player is a program and every trade partner might be another model. The goal: <strong>get as rich as possible and become the server's trading kingpin.</strong> Every trade it makes lands here.</p>
+
+  <section class="grid" aria-label="Summary">
+    <div class="kpi frame"><div class="frame__in"><span class="hud">Net worth</span><span class="kpi__v num" id="k-nw">—</span><span class="kpi__s num" id="k-nw-s">&nbsp;</span></div></div>
+    <div class="kpi frame"><div class="frame__in"><span class="hud">Coins</span><span class="kpi__v num" id="k-coins">—</span><span class="kpi__s" id="k-coins-s">&nbsp;</span></div></div>
+    <div class="kpi frame"><div class="frame__in"><span class="hud">Trades</span><span class="kpi__v num" id="k-trades">—</span><span class="kpi__s num" id="k-vol">&nbsp;</span></div></div>
+    <div class="kpi frame"><div class="frame__in"><span class="hud">Total level</span><span class="kpi__v num" id="k-lvl">—</span><span class="kpi__s num" id="k-cb">&nbsp;</span></div></div>
+    <div class="status frame"><div class="frame__in"><span class="hud">Now</span><b id="status">Loading the books…</b><span class="hud" id="updated"></span></div></div>
+
+    <div class="chart frame"><div class="frame__in">
+      <div class="chart__hd hud"><span>Net worth over time</span><span id="chart-range"></span></div>
+      <svg id="chart" viewBox="0 0 800 260" preserveAspectRatio="none" role="img" aria-label="Net worth over time"></svg>
+    </div></div>
+
+    <div class="holdings frame"><div class="frame__in">
+      <div class="panel__hd hud"><span>Holdings (marked to GE bid)</span></div>
+      <div class="scroll"><table><thead><tr><th>Item</th><th class="r">Qty</th><th class="r">Value</th></tr></thead><tbody id="holdings"></tbody></table></div>
+    </div></div>
+  </section>
+
+  <section id="ledger">
+    <div class="head">
+      <h2><small>Every coin in and out</small>Trade ledger</h2>
+      <div class="tools" role="group" aria-label="Filter trades">
+        <button class="chip" data-f="all" aria-pressed="true">All</button>
+        <button class="chip" data-f="GE" aria-pressed="false">Grand Exchange</button>
+        <button class="chip" data-f="shop" aria-pressed="false">Shops</button>
+        <button class="chip" data-f="player" aria-pressed="false">Players</button>
+        <button class="chip chip--solid" id="csv">Download CSV</button>
+      </div>
+    </div>
+    <div class="ledger frame"><div class="frame__in"><div class="scroll">
+      <table>
+        <thead><tr><th>#</th><th>Time</th><th>Venue</th><th>Side</th><th>Item</th><th class="r">Qty</th><th class="r">Price</th><th class="r">Coins</th><th>Counterparty</th><th>Note</th></tr></thead>
+        <tbody id="trades"></tbody>
+      </table>
+    </div></div></div>
+  </section>
+
+  <section id="journal">
+    <div class="head"><h2><small>Strategy &amp; field notes</small>Journal</h2></div>
+    <div class="grid">
+      <div class="journal frame"><div class="frame__in"><ul class="feed" id="feed"></ul></div></div>
+      <div class="skillbox frame"><div class="frame__in" style="padding:0">
+        <div class="panel__hd hud" style="padding-bottom:10px"><span>Skills</span></div>
+        <div class="skills num" id="skills"></div>
+      </div></div>
+    </div>
+  </section>
+
+  <footer class="hud">
+    <span>Data refreshes every 60s · <span id="src"></span></span>
+    <span>Built on <a href="https://github.com/MaxBittker/rs-sdk" rel="noopener">rs-sdk</a></span>
+  </footer>
+</div>
+
+<script>
+// Data is pushed by the bot to the rs-trade-log branch; fall back to a copy next to this page.
+const SOURCES = [
+  'https://raw.githubusercontent.com/seth-krch/krch.dev/rs-trade-log/rs/data.json',
+  'data.json',
+];
+const $ = id => document.getElementById(id);
+const gp = n => {
+  const a = Math.abs(n), s = n < 0 ? '−' : '';
+  if (a >= 1e7) return s + (a / 1e6).toFixed(1) + 'M';
+  if (a >= 1e5) return s + Math.round(a / 1e3) + 'K';
+  return s + Math.round(a).toLocaleString('en-US');
+};
+const full = n => Math.round(n).toLocaleString('en-US');
+const ago = iso => {
+  const s = Math.max(0, (Date.now() - Date.parse(iso)) / 1000);
+  if (s < 90) return Math.round(s) + 's ago';
+  if (s < 5400) return Math.round(s / 60) + 'm ago';
+  if (s < 129600) return Math.round(s / 3600) + 'h ago';
+  return Math.round(s / 86400) + 'd ago';
+};
+const when = iso => new Date(iso).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+let data = null, filter = 'all';
+
+async function load() {
+  for (const url of SOURCES) {
+    try {
+      const r = await fetch(url + (url.startsWith('http') ? '?t=' + Date.now() : ''), { cache: 'no-store' });
+      if (!r.ok) continue;
+      data = await r.json();
+      $('src').textContent = url.startsWith('http') ? 'live feed' : 'local copy';
+      render();
+      return;
+    } catch { /* try next source */ }
+  }
+  $('status').textContent = 'The ledger has not been published yet.';
+}
+
+function render() {
+  const d = data;
+  const hist = d.history ?? [];
+  const nw = hist.at(-1)?.netWorth ?? 0;
+  const first = hist[0]?.netWorth ?? nw;
+  const delta = nw - first;
+  $('k-nw').textContent = gp(nw) + ' gp';
+  $('k-nw-s').innerHTML = hist.length > 1 ? `<span class="${delta >= 0 ? 'up' : 'down'}">${delta >= 0 ? '▲' : '▼'} ${gp(Math.abs(delta))}</span> since ${when(hist[0].t)}` : 'first snapshot';
+  const coins = hist.at(-1)?.coins ?? 0;
+  $('k-coins').textContent = gp(coins);
+  $('k-coins-s').textContent = 'cash on hand + GE + bank';
+  const trades = d.trades ?? [];
+  const volume = trades.reduce((a, t) => a + Math.abs(t.total || 0), 0);
+  $('k-trades').textContent = full(trades.length);
+  $('k-vol').textContent = gp(volume) + ' gp traded';
+  $('k-lvl').textContent = d.stats?.totalLevel ?? '—';
+  $('k-cb').textContent = d.stats?.combatLevel ? 'combat ' + d.stats.combatLevel : '';
+  $('botname').textContent = d.bot;
+  $('status').textContent = d.status || '—';
+  $('updated').textContent = 'updated ' + ago(d.updatedAt);
+  const fresh = Date.now() - Date.parse(d.updatedAt) < 30 * 60_000;
+  $('live').className = 'tag ' + (fresh ? 'tag--live' : 'tag--live tag--stale');
+  $('live').firstElementChild.textContent = fresh ? 'Trading live' : 'Bot offline';
+
+  // Holdings
+  const hold = (d.holdings ?? []).filter(h => h.value > 0 || h.item === 'Coins');
+  const merged = new Map();
+  for (const h of hold) {
+    const m = merged.get(h.item) ?? { item: h.item, qty: 0, value: 0 };
+    m.qty += h.qty; m.value += h.value; merged.set(h.item, m);
+  }
+  const rows = [...merged.values()].sort((a, b) => b.value - a.value).slice(0, 14);
+  $('holdings').innerHTML = rows.length ? rows.map(h => `<tr><td>${esc(h.item)}</td><td class="r num">${full(h.qty)}</td><td class="r num">${gp(h.value)}</td></tr>`).join('')
+    : '<tr><td colspan="3" class="empty">Nothing yet</td></tr>';
+
+  renderTrades();
+  renderChart(hist);
+
+  $('feed').innerHTML = (d.journal ?? []).slice().reverse().map(j => `<li><time class="hud" datetime="${esc(j.t)}">${when(j.t)}</time><span>${esc(j.msg)}</span></li>`).join('')
+    || '<li class="empty">No entries yet</li>';
+  const sk = Object.fromEntries(Object.entries(d.stats?.skills ?? {}).filter(([n]) => !/^Stat\d+$/.test(n)));
+  $('skills').innerHTML = Object.entries(sk).map(([n, l]) => `<div><span>${esc(n)}</span><b>${l}</b></div>`).join('');
+}
+
+function renderTrades() {
+  const list = (data?.trades ?? []).filter(t => filter === 'all' || t.venue === filter).slice().reverse();
+  $('trades').innerHTML = list.length ? list.map(t => `<tr>
+      <td class="num">${t.id}</td>
+      <td class="num">${when(t.t)}</td>
+      <td><span class="venue">${esc(t.venue)}</span></td>
+      <td class="${t.side === 'sell' ? 'up' : t.side === 'buy' ? 'down' : ''}">${esc(t.side)}</td>
+      <td>${esc(t.item)}</td>
+      <td class="r num">${full(t.qty)}</td>
+      <td class="r num">${(+t.price).toLocaleString('en-US', { maximumFractionDigits: 2 })}</td>
+      <td class="r num ${t.total >= 0 ? 'up' : 'down'}">${t.total >= 0 ? '+' : ''}${full(t.total)}</td>
+      <td>${esc(t.counterparty ?? '')}</td>
+      <td class="note">${esc(t.note ?? '')}</td></tr>`).join('')
+    : '<tr><td colspan="10" class="empty">No trades in this view yet</td></tr>';
+}
+
+function renderChart(hist) {
+  const svg = $('chart');
+  if (hist.length < 2) { svg.innerHTML = '<text x="400" y="130" text-anchor="middle" fill="#6f6680" font-family="Share Tech Mono" font-size="14">Waiting for a second snapshot</text>'; return; }
+  const W = 800, H = 260, P = { l: 56, r: 14, t: 14, b: 26 };
+  const xs = hist.map(h => Date.parse(h.t)), ys = hist.map(h => h.netWorth);
+  const x0 = xs[0], x1 = xs.at(-1) || x0 + 1, y0 = 0, y1 = Math.max(...ys) * 1.08 || 1;
+  const X = t => P.l + (t - x0) / (x1 - x0 || 1) * (W - P.l - P.r);
+  const Y = v => H - P.b - (v - y0) / (y1 - y0) * (H - P.t - P.b);
+  // Net worth only changes at snapshots, so draw it as steps.
+  let path = `M${X(xs[0])},${Y(ys[0])}`;
+  for (let i = 1; i < xs.length; i++) path += `H${X(xs[i])}V${Y(ys[i])}`;
+  const area = path + `V${Y(0)}H${X(xs[0])}Z`;
+  const ticks = [0, .25, .5, .75, 1].map(f => y0 + f * (y1 - y0));
+  svg.innerHTML = `
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#63e0d6" stop-opacity=".28"/><stop offset="1" stop-color="#63e0d6" stop-opacity="0"/></linearGradient></defs>
+    ${ticks.map(v => `<line x1="${P.l}" x2="${W - P.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="#2a2036"/><text x="${P.l - 8}" y="${Y(v) + 4}" text-anchor="end" fill="#6f6680" font-family="Share Tech Mono" font-size="11">${gp(v)}</text>`).join('')}
+    <path d="${area}" fill="url(#g)"/>
+    <path d="${path}" fill="none" stroke="#63e0d6" stroke-width="2" vector-effect="non-scaling-stroke"/>
+    <circle cx="${X(xs.at(-1))}" cy="${Y(ys.at(-1))}" r="4" fill="#63e0d6"/>`;
+  $('chart-range').textContent = `${when(hist[0].t)} → ${when(hist.at(-1).t)}`;
+}
+
+document.querySelectorAll('.chip[data-f]').forEach(b => b.addEventListener('click', () => {
+  filter = b.dataset.f;
+  document.querySelectorAll('.chip[data-f]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  renderTrades();
+}));
+
+$('csv').addEventListener('click', () => {
+  const cols = ['id', 't', 'venue', 'side', 'item', 'qty', 'price', 'total', 'counterparty', 'note'];
+  const q = v => /[",\n]/.test(String(v ?? '')) ? '"' + String(v).replace(/"/g, '""') + '"' : String(v ?? '');
+  const csv = [cols.join(','), ...(data?.trades ?? []).map(t => cols.map(c => q(t[c])).join(','))].join('\n');
+  const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(new Blob([csv], { type: 'text/csv' })), download: 'rs-kingpin-trades.csv' });
+  a.click(); URL.revokeObjectURL(a.href);
+});
+
+load();
+setInterval(load, 60_000);
+</script>
+</body>
+</html>
