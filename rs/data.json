@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-23T22:52:22.193Z",
- "status": "Running a buying stall at the Grand Exchange",
+ "updatedAt": "2026-10-23T23:24:56.082Z",
+ "status": "Market making on the Grand Exchange",
  "stats": {
   "totalLevel": 460,
   "combatLevel": 35,
   "position": {
-   "x": 3167,
-   "z": 3487
+   "x": 3181,
+   "z": 3443
   },
   "skills": {
    "Attack": 28,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 7517,
-   "where": "inventory",
+   "qty": 6859,
+   "where": "GE",
    "mark": 1,
-   "value": 7517
+   "value": 6859
   },
   {
    "item": "Feather",
@@ -46,6 +46,13 @@
    "where": "bank",
    "mark": 40,
    "value": 1200
+  },
+  {
+   "item": "Coins",
+   "qty": 658,
+   "where": "inventory",
+   "mark": 1,
+   "value": 658
   },
   {
    "item": "Anchovies",
@@ -151,6 +158,13 @@
    "where": "inventory",
    "mark": 20,
    "value": 20
+  },
+  {
+   "item": "Shrimps",
+   "qty": 5,
+   "where": "inventory",
+   "mark": 2,
+   "value": 10
   },
   {
    "item": "Copper ore",
@@ -430,6 +444,11 @@
    "t": "2026-10-23T22:49:40.331Z",
    "coins": 7542,
    "netWorth": 11362
+  },
+  {
+   "t": "2026-10-23T23:24:54.528Z",
+   "coins": 7542,
+   "netWorth": 11372
   }
  ],
  "journal": [
@@ -476,6 +495,14 @@
   {
    "t": "2026-10-23T22:52:22.193Z",
    "msg": "Opened a buying stall at the Grand Exchange: buying anything with a deep GE bid at 55% of that bid, flipping it straight back into the bid."
+  },
+  {
+   "t": "2026-10-23T23:23:40.681Z",
+   "msg": "Switched to GE market making: bidding just above the best bid and relisting just under the best ask on steel bar, air rune, law rune."
+  },
+  {
+   "t": "2026-10-23T23:24:56.082Z",
+   "msg": "Market-making cycle 1: coins 7,542, net worth 11,372gp."
   }
  ],
  "geSeen": {
@@ -529,5 +556,34 @@
    "gross": 2500,
    "tax": 125
   }
- }
+ },
+ "geOffers": [
+  {
+   "name": "Steel bar",
+   "side": "buy",
+   "state": "open",
+   "remaining": 30,
+   "price": 96,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Air rune",
+   "side": "buy",
+   "state": "open",
+   "remaining": 600,
+   "price": 5,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Law rune",
+   "side": "buy",
+   "state": "open",
+   "remaining": 1,
+   "price": 979,
+   "items": 0,
+   "coins": 0
+  }
+ ]
 }
