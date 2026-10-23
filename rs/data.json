@@ -1,7 +1,7 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-23T23:28:10.905Z",
+ "updatedAt": "2026-10-23T23:31:33.587Z",
  "status": "Market making on the Grand Exchange",
  "stats": {
   "totalLevel": 460,
@@ -35,10 +35,17 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 6859,
+   "qty": 5880,
    "where": "GE",
    "mark": 1,
-   "value": 6859
+   "value": 5880
+  },
+  {
+   "item": "Coins",
+   "qty": 1637,
+   "where": "inventory",
+   "mark": 1,
+   "value": 1637
   },
   {
    "item": "Feather",
@@ -46,13 +53,6 @@
    "where": "bank",
    "mark": 40,
    "value": 1200
-  },
-  {
-   "item": "Coins",
-   "qty": 658,
-   "where": "inventory",
-   "mark": 1,
-   "value": 658
   },
   {
    "item": "Anchovies",
@@ -573,15 +573,6 @@
    "state": "open",
    "remaining": 600,
    "price": 5,
-   "items": 0,
-   "coins": 0
-  },
-  {
-   "name": "Law rune",
-   "side": "buy",
-   "state": "open",
-   "remaining": 1,
-   "price": 979,
    "items": 0,
    "coins": 0
   }
