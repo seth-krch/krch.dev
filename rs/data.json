@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-23T22:06:49.679Z",
- "status": "Rune arbitrage: Aubury -> Grand Exchange",
+ "updatedAt": "2026-10-23T22:09:09.381Z",
+ "status": "Mining coal → selling into the GE bid",
  "stats": {
   "totalLevel": 447,
   "combatLevel": 35,
@@ -239,6 +239,10 @@
   {
    "t": "2026-10-23T22:06:49.679Z",
    "msg": "Sold spare inventory into live GE bids. Coins 788, net worth 2215gp."
+  },
+  {
+   "t": "2026-10-23T22:09:09.381Z",
+   "msg": "Heading out to mine coal for the GE buy order."
   }
  ],
  "geSeen": {
