@@ -1,0 +1,281 @@
+{
+ "bot": "PIfvHy1OU",
+ "startedAt": "2026-10-23T22:06:23.859Z",
+ "updatedAt": "2026-10-23T22:06:49.679Z",
+ "status": "Rune arbitrage: Aubury -> Grand Exchange",
+ "stats": {
+  "totalLevel": 447,
+  "combatLevel": 35,
+  "position": {
+   "x": 3181,
+   "z": 3443
+  },
+  "skills": {
+   "Attack": 28,
+   "Defence": 28,
+   "Strength": 28,
+   "Hitpoints": 31,
+   "Ranged": 18,
+   "Prayer": 23,
+   "Magic": 12,
+   "Cooking": 37,
+   "Woodcutting": 43,
+   "Fletching": 18,
+   "Fishing": 36,
+   "Firemaking": 40,
+   "Crafting": 1,
+   "Smithing": 25,
+   "Mining": 36,
+   "Herblore": 1,
+   "Agility": 1,
+   "Thieving": 38,
+   "Stat18": 1,
+   "Stat19": 1,
+   "Runecraft": 1
+  }
+ },
+ "holdings": [
+  {
+   "item": "Coins",
+   "qty": 788,
+   "where": "inventory",
+   "mark": 1,
+   "value": 788
+  },
+  {
+   "item": "Anchovies",
+   "qty": 2,
+   "where": "inventory",
+   "mark": 300,
+   "value": 600
+  },
+  {
+   "item": "Bronze arrow",
+   "qty": 12,
+   "where": "inventory",
+   "mark": 20,
+   "value": 240
+  },
+  {
+   "item": "Bread",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 240,
+   "value": 240
+  },
+  {
+   "item": "Earth rune",
+   "qty": 4,
+   "where": "inventory",
+   "mark": 35,
+   "value": 140
+  },
+  {
+   "item": "Knife",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 120,
+   "value": 120
+  },
+  {
+   "item": "Bronze scimitar",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 27,
+   "value": 27
+  },
+  {
+   "item": "Wooden shield",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 20,
+   "value": 20
+  },
+  {
+   "item": "Bronze pickaxe",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 20,
+   "value": 20
+  },
+  {
+   "item": "Hammer",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 20,
+   "value": 20
+  }
+ ],
+ "bank": [],
+ "trades": [
+  {
+   "id": 1,
+   "t": "2026-10-23T22:03:37.606Z",
+   "venue": "shop",
+   "side": "buy",
+   "item": "Chaos rune",
+   "qty": 2,
+   "price": 90,
+   "total": -180,
+   "counterparty": "Aubury"
+  },
+  {
+   "id": 2,
+   "t": "2026-10-23T22:03:37.606Z",
+   "venue": "shop",
+   "side": "buy",
+   "item": "Fire rune",
+   "qty": 2,
+   "price": 24,
+   "total": -48,
+   "counterparty": "Aubury"
+  },
+  {
+   "id": 3,
+   "t": "2026-10-23T22:06:21.688Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Tinderbox",
+   "qty": 1,
+   "price": 190,
+   "total": 190,
+   "counterparty": "GE",
+   "note": "tax 10gp"
+  },
+  {
+   "id": 4,
+   "t": "2026-10-23T22:06:21.688Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Chaos rune",
+   "qty": 2,
+   "price": 57,
+   "total": 114,
+   "counterparty": "GE",
+   "note": "tax 6gp"
+  },
+  {
+   "id": 5,
+   "t": "2026-10-23T22:06:21.689Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Fire rune",
+   "qty": 2,
+   "price": 38,
+   "total": 76,
+   "counterparty": "GE",
+   "note": "tax 4gp"
+  },
+  {
+   "id": 6,
+   "t": "2026-10-23T22:06:21.689Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Air rune",
+   "qty": 17,
+   "price": 3.82,
+   "total": 65,
+   "counterparty": "GE",
+   "note": "tax 3gp"
+  },
+  {
+   "id": 7,
+   "t": "2026-10-23T22:06:21.690Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Mind rune",
+   "qty": 7,
+   "price": 5.71,
+   "total": 40,
+   "counterparty": "GE",
+   "note": "tax 2gp"
+  },
+  {
+   "id": 8,
+   "t": "2026-10-23T22:06:21.690Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Water rune",
+   "qty": 6,
+   "price": 33.33,
+   "total": 200,
+   "counterparty": "GE",
+   "note": "tax 10gp"
+  },
+  {
+   "id": 9,
+   "t": "2026-10-23T22:06:47.602Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Shrimps",
+   "qty": 1,
+   "price": 95,
+   "total": 95,
+   "counterparty": "GE",
+   "note": "tax 5gp"
+  }
+ ],
+ "history": [
+  {
+   "t": "2026-10-23T22:06:23.859Z",
+   "coins": 693,
+   "netWorth": 2720
+  },
+  {
+   "t": "2026-10-23T22:06:49.678Z",
+   "coins": 788,
+   "netWorth": 2215
+  }
+ ],
+ "journal": [
+  {
+   "t": "2026-10-23T22:00:00.000Z",
+   "msg": "Day one. Starting capital: 236gp, a bronze scimitar and a bank full of starter junk. Plan: buy runes cheap at Aubury's and fill standing GE buy orders, then scale into coal and iron, where the GE wants millions."
+  },
+  {
+   "t": "2026-10-23T22:06:23.860Z",
+   "msg": "Sold spare inventory into live GE bids. Coins 693, net worth 2720gp."
+  },
+  {
+   "t": "2026-10-23T22:06:49.679Z",
+   "msg": "Sold spare inventory into live GE bids. Coins 788, net worth 2215gp."
+  }
+ ],
+ "geSeen": {
+  "29921": {
+   "filled": 1,
+   "gross": 200,
+   "tax": 10
+  },
+  "29922": {
+   "filled": 2,
+   "gross": 120,
+   "tax": 6
+  },
+  "29924": {
+   "filled": 2,
+   "gross": 80,
+   "tax": 4
+  },
+  "29925": {
+   "filled": 17,
+   "gross": 68,
+   "tax": 3
+  },
+  "29926": {
+   "filled": 7,
+   "gross": 42,
+   "tax": 2
+  },
+  "29927": {
+   "filled": 6,
+   "gross": 210,
+   "tax": 10
+  },
+  "29928": {
+   "filled": 1,
+   "gross": 100,
+   "tax": 5
+  }
+ }
+}
