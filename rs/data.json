@@ -1,10 +1,10 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-23T22:09:09.381Z",
+ "updatedAt": "2026-10-23T22:38:47.841Z",
  "status": "Mining coal → selling into the GE bid",
  "stats": {
-  "totalLevel": 447,
+  "totalLevel": 460,
   "combatLevel": 35,
   "position": {
    "x": 3181,
@@ -25,48 +25,81 @@
    "Firemaking": 40,
    "Crafting": 1,
    "Smithing": 25,
-   "Mining": 36,
+   "Mining": 51,
    "Herblore": 1,
    "Agility": 1,
    "Thieving": 38,
-   "Stat18": 1,
-   "Stat19": 1,
    "Runecraft": 1
   }
  },
  "holdings": [
   {
    "item": "Coins",
-   "qty": 788,
+   "qty": 3767,
    "where": "inventory",
    "mark": 1,
-   "value": 788
+   "value": 3767
+  },
+  {
+   "item": "Feather",
+   "qty": 30,
+   "where": "bank",
+   "mark": 40,
+   "value": 1200
   },
   {
    "item": "Anchovies",
    "qty": 2,
-   "where": "inventory",
+   "where": "bank",
    "mark": 300,
    "value": 600
   },
   {
+   "item": "Raw shrimps",
+   "qty": 4,
+   "where": "bank",
+   "mark": 100,
+   "value": 400
+  },
+  {
+   "item": "Headless arrow",
+   "qty": 30,
+   "where": "bank",
+   "mark": 10,
+   "value": 300
+  },
+  {
    "item": "Bronze arrow",
    "qty": 12,
-   "where": "inventory",
+   "where": "bank",
    "mark": 20,
    "value": 240
   },
   {
    "item": "Bread",
    "qty": 1,
-   "where": "inventory",
+   "where": "bank",
    "mark": 240,
    "value": 240
   },
   {
+   "item": "Logs",
+   "qty": 1,
+   "where": "bank",
+   "mark": 200,
+   "value": 200
+  },
+  {
+   "item": "Tin ore",
+   "qty": 3,
+   "where": "bank",
+   "mark": 60,
+   "value": 180
+  },
+  {
    "item": "Earth rune",
    "qty": 4,
-   "where": "inventory",
+   "where": "bank",
    "mark": 35,
    "value": 140
   },
@@ -78,11 +111,32 @@
    "value": 120
   },
   {
+   "item": "Small fishing net",
+   "qty": 1,
+   "where": "bank",
+   "mark": 100,
+   "value": 100
+  },
+  {
    "item": "Bronze scimitar",
    "qty": 1,
    "where": "inventory",
    "mark": 27,
    "value": 27
+  },
+  {
+   "item": "Bronze sword",
+   "qty": 1,
+   "where": "bank",
+   "mark": 26,
+   "value": 26
+  },
+  {
+   "item": "Coins",
+   "qty": 25,
+   "where": "bank",
+   "mark": 1,
+   "value": 25
   },
   {
    "item": "Wooden shield",
@@ -104,9 +158,80 @@
    "where": "inventory",
    "mark": 20,
    "value": 20
+  },
+  {
+   "item": "Copper ore",
+   "qty": 3,
+   "where": "bank",
+   "mark": 3,
+   "value": 9
+  },
+  {
+   "item": "Body rune",
+   "qty": 2,
+   "where": "bank",
+   "mark": 2,
+   "value": 4
   }
  ],
- "bank": [],
+ "bank": [
+  {
+   "name": "Coins",
+   "count": 25
+  },
+  {
+   "name": "Headless arrow",
+   "count": 30
+  },
+  {
+   "name": "Feather",
+   "count": 30
+  },
+  {
+   "name": "Bronze sword",
+   "count": 1
+  },
+  {
+   "name": "Raw shrimps",
+   "count": 4
+  },
+  {
+   "name": "Logs",
+   "count": 1
+  },
+  {
+   "name": "Small fishing net",
+   "count": 1
+  },
+  {
+   "name": "Body rune",
+   "count": 2
+  },
+  {
+   "name": "Copper ore",
+   "count": 3
+  },
+  {
+   "name": "Tin ore",
+   "count": 3
+  },
+  {
+   "name": "Bronze arrow",
+   "count": 12
+  },
+  {
+   "name": "Earth rune",
+   "count": 4
+  },
+  {
+   "name": "Anchovies",
+   "count": 2
+  },
+  {
+   "name": "Bread",
+   "count": 1
+  }
+ ],
  "trades": [
   {
    "id": 1,
@@ -213,6 +338,18 @@
    "total": 95,
    "counterparty": "GE",
    "note": "tax 5gp"
+  },
+  {
+   "id": 10,
+   "t": "2026-10-23T22:38:42.513Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Coal",
+   "qty": 19,
+   "price": 156.79,
+   "total": 2979,
+   "counterparty": "GE",
+   "note": "tax 156gp"
   }
  ],
  "history": [
@@ -225,6 +362,11 @@
    "t": "2026-10-23T22:06:49.678Z",
    "coins": 788,
    "netWorth": 2215
+  },
+  {
+   "t": "2026-10-23T22:38:47.840Z",
+   "coins": 3792,
+   "netWorth": 7638
   }
  ],
  "journal": [
@@ -243,6 +385,10 @@
   {
    "t": "2026-10-23T22:09:09.381Z",
    "msg": "Heading out to mine coal for the GE buy order."
+  },
+  {
+   "t": "2026-10-23T22:38:47.841Z",
+   "msg": "Sold spare inventory into live GE bids. Coins 3792, net worth 7638gp."
   }
  ],
  "geSeen": {
@@ -280,6 +426,11 @@
    "filled": 1,
    "gross": 100,
    "tax": 5
+  },
+  "30183": {
+   "filled": 19,
+   "gross": 3135,
+   "tax": 156
   }
  }
 }
