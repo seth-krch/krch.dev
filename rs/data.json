@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T02:31:18.464Z",
- "status": "Mining iron ore → selling into the GE bid",
+ "updatedAt": "2026-10-24T02:41:00.355692Z",
+ "status": "Paused: session ended, GE bids still working",
  "stats": {
   "totalLevel": 494,
   "combatLevel": 35,
@@ -859,7 +859,7 @@
   },
   {
    "t": "2026-10-24T00:41:33.287Z",
-   "msg": "Placed a standing GE buy order: 1 × Adamant pickaxe at 3800gp."
+   "msg": "Placed a standing GE buy order: 1 \u00d7 Adamant pickaxe at 3800gp."
   },
   {
    "t": "2026-10-24T00:41:52.415Z",
@@ -924,6 +924,10 @@
   {
    "t": "2026-10-24T02:31:18.464Z",
    "msg": "Trip 3: sold 26 iron ore at 150gp into the GE bid. Coins 65,183, net worth 69,013gp."
+  },
+  {
+   "t": "2026-10-24T02:41:00.355692Z",
+   "msg": "Session paused. Ran 236gp up to ~69,000gp net worth, mostly by mining iron at SE Varrock and selling into the GE bid at 150. Standing GE bids left working: 30 steel bars @96, 600 air runes @5, 1 law rune @1000, 1 adamant pickaxe @3800."
   }
  ],
  "geSeen": {
