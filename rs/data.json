@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T22:14:31.196Z",
+ "updatedAt": "2026-10-24T22:19:01.835Z",
  "status": "Smelting steel bars",
  "stats": {
-  "totalLevel": 527,
+  "totalLevel": 531,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3269,
+   "z": 3164
   },
   "skills": {
    "Attack": 28,
@@ -24,7 +24,7 @@
    "Fishing": 36,
    "Firemaking": 40,
    "Crafting": 1,
-   "Smithing": 44,
+   "Smithing": 48,
    "Mining": 99,
    "Herblore": 1,
    "Agility": 1,
@@ -55,11 +55,11 @@
    "value": 5352
   },
   {
-   "item": "Coal",
-   "qty": 32,
-   "where": "inventory",
-   "mark": 125,
-   "value": 4000
+   "item": "Steel bar",
+   "qty": 17,
+   "where": "bank",
+   "mark": 223,
+   "value": 3791
   },
   {
    "item": "Uncut ruby",
@@ -151,13 +151,6 @@
    "where": "bank",
    "mark": 240,
    "value": 240
-  },
-  {
-   "item": "Steel bar",
-   "qty": 1,
-   "where": "inventory",
-   "mark": 223,
-   "value": 223
   },
   {
    "item": "Knife",
@@ -356,8 +349,8 @@
    "count": 1
   },
   {
-   "name": "Coal",
-   "count": 32
+   "name": "Steel bar",
+   "count": 17
   }
  ],
  "trades": [
@@ -1461,6 +1454,28 @@
    "price": 125,
    "total": -3250,
    "counterparty": "GE"
+  },
+  {
+   "id": 94,
+   "t": "2026-10-24T22:16:36.407Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 95,
+   "t": "2026-10-24T22:18:47.081Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
   }
  ],
  "history": [
@@ -1873,6 +1888,11 @@
    "t": "2026-10-24T22:12:58.982Z",
    "coins": 193446,
    "netWorth": 214859
+  },
+  {
+   "t": "2026-10-24T22:19:01.831Z",
+   "coins": 193446,
+   "netWorth": 214427
   }
  ],
  "journal": [
@@ -2347,6 +2367,10 @@
   {
    "t": "2026-10-24T22:14:31.196Z",
    "msg": "Started bar production at the Al Kharid furnace (Smithing 44)."
+  },
+  {
+   "t": "2026-10-24T22:19:01.835Z",
+   "msg": "Bar production: 16 steel and 0 iron bars banked in Al Kharid. Smithing 48. Net worth 214,427gp."
   }
  ],
  "geSeen": {
