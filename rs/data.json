@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T22:44:21.699Z",
- "status": "Mining adamantite ore + iron ore → selling into the GE bids",
+ "updatedAt": "2026-10-24T22:44:36.714Z",
+ "status": "Market making on the Grand Exchange",
  "stats": {
   "totalLevel": 531,
   "combatLevel": 35,
@@ -35,17 +35,17 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 121244,
-   "where": "GE",
+   "qty": 136921,
+   "where": "inventory",
    "mark": 1,
-   "value": 121244
+   "value": 136921
   },
   {
    "item": "Coins",
-   "qty": 72177,
-   "where": "inventory",
+   "qty": 50000,
+   "where": "GE",
    "mark": 1,
-   "value": 72177
+   "value": 50000
   },
   {
    "item": "Steel bar",
@@ -53,6 +53,13 @@
    "where": "GE",
    "mark": 223,
    "value": 5352
+  },
+  {
+   "item": "Coal",
+   "qty": 52,
+   "where": "GE",
+   "mark": 80,
+   "value": 4160
   },
   {
    "item": "Steel bar",
@@ -1939,6 +1946,11 @@
    "t": "2026-10-24T22:38:19.557Z",
    "coins": 193446,
    "netWorth": 219324
+  },
+  {
+   "t": "2026-10-24T22:44:36.007Z",
+   "coins": 186946,
+   "netWorth": 216984
   }
  ],
  "journal": [
@@ -2461,6 +2473,14 @@
   {
    "t": "2026-10-24T22:44:19.946Z",
    "msg": "Trip 10: sold nothing into the GE bids. Coins 193,446, net worth 219,324gp."
+  },
+  {
+   "t": "2026-10-24T22:44:23.977Z",
+   "msg": "Switched to GE market making: bidding just above the best bid and relisting just under the best ask on steel bar, air rune, law rune."
+  },
+  {
+   "t": "2026-10-24T22:44:36.714Z",
+   "msg": "Market-making cycle 1: coins 186,946, net worth 216,984gp."
   }
  ],
  "geSeen": {
@@ -2872,21 +2892,12 @@
  },
  "geOffers": [
   {
-   "name": "Steel bar",
-   "side": "buy",
-   "state": "open",
-   "remaining": 27,
-   "price": 222,
-   "items": 0,
-   "coins": 0
-  },
-  {
    "name": "Coal",
    "side": "buy",
-   "state": "open",
-   "remaining": 522,
+   "state": "cancelled",
+   "remaining": 0,
    "price": 125,
-   "items": 0,
+   "items": 52,
    "coins": 0
   },
   {
@@ -2901,28 +2912,28 @@
   {
    "name": "Law rune",
    "side": "sell",
-   "state": "open",
-   "remaining": 1,
+   "state": "cancelled",
+   "remaining": 0,
    "price": 2598,
-   "items": 0,
+   "items": 1,
    "coins": 0
   },
   {
    "name": "Steel bar",
    "side": "sell",
-   "state": "open",
-   "remaining": 24,
+   "state": "cancelled",
+   "remaining": 0,
    "price": 1495,
-   "items": 0,
+   "items": 24,
    "coins": 0
   },
   {
    "name": "Iron bar",
    "side": "sell",
-   "state": "open",
-   "remaining": 18,
+   "state": "cancelled",
+   "remaining": 0,
    "price": 1449,
-   "items": 0,
+   "items": 18,
    "coins": 0
   }
  ]
