@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T21:52:17.277Z",
- "status": "Training Smithing → steel bars",
+ "updatedAt": "2026-10-24T21:57:16.738Z",
+ "status": "Steel bars: Al Kharid furnace → GE",
  "stats": {
-  "totalLevel": 517,
+  "totalLevel": 518,
   "combatLevel": 35,
   "position": {
-   "x": 3275,
-   "z": 3185
+   "x": 3181,
+   "z": 3443
   },
   "skills": {
    "Attack": 28,
@@ -24,7 +24,7 @@
    "Fishing": 36,
    "Firemaking": 40,
    "Crafting": 1,
-   "Smithing": 34,
+   "Smithing": 35,
    "Mining": 99,
    "Herblore": 1,
    "Agility": 1,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 130994,
+   "qty": 124494,
    "where": "GE",
    "mark": 1,
-   "value": 130994
+   "value": 124494
   },
   {
    "item": "Coins",
@@ -46,6 +46,13 @@
    "where": "inventory",
    "mark": 1,
    "value": 72177
+  },
+  {
+   "item": "Coal",
+   "qty": 54,
+   "where": "inventory",
+   "mark": 125,
+   "value": 6750
   },
   {
    "item": "Uncut emerald",
@@ -64,7 +71,7 @@
   {
    "item": "Iron bar",
    "qty": 18,
-   "where": "bank",
+   "where": "GE",
    "mark": 100,
    "value": 1800
   },
@@ -83,11 +90,11 @@
    "value": 600
   },
   {
-   "item": "Coal",
-   "qty": 4,
-   "where": "inventory",
-   "mark": 125,
-   "value": 500
+   "item": "Iron ore",
+   "qty": 3,
+   "where": "bank",
+   "mark": 150,
+   "value": 450
   },
   {
    "item": "Earth rune",
@@ -109,13 +116,6 @@
    "where": "bank",
    "mark": 4,
    "value": 324
-  },
-  {
-   "item": "Iron ore",
-   "qty": 2,
-   "where": "inventory",
-   "mark": 150,
-   "value": 300
   },
   {
    "item": "Headless arrow",
@@ -146,11 +146,11 @@
    "value": 240
   },
   {
-   "item": "Iron ore",
+   "item": "Steel bar",
    "qty": 1,
-   "where": "bank",
-   "mark": 150,
-   "value": 150
+   "where": "GE",
+   "mark": 223,
+   "value": 223
   },
   {
    "item": "Knife",
@@ -338,15 +338,11 @@
   },
   {
    "name": "Iron ore",
-   "count": 1
+   "count": 3
   },
   {
    "name": "Law rune",
    "count": 1
-  },
-  {
-   "name": "Iron bar",
-   "count": 18
   },
   {
    "name": "Uncut ruby",
@@ -1399,6 +1395,17 @@
    "price": 0,
    "total": 0,
    "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 89,
+   "t": "2026-10-24T21:57:05.246Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Coal",
+   "qty": 52,
+   "price": 125,
+   "total": -6500,
+   "counterparty": "GE"
   }
  ],
  "history": [
@@ -1796,6 +1803,11 @@
    "t": "2026-10-24T21:52:17.277Z",
    "coins": 203196,
    "netWorth": 215651
+  },
+  {
+   "t": "2026-10-24T21:57:16.001Z",
+   "coins": 196696,
+   "netWorth": 215624
   }
  ],
  "journal": [
@@ -2254,6 +2266,10 @@
   {
    "t": "2026-10-24T21:26:52.110Z",
    "msg": "Started bar production at the Al Kharid furnace (Smithing 25)."
+  },
+  {
+   "t": "2026-10-24T21:57:16.738Z",
+   "msg": "GE errand: listed 1 steel bar at 1497, 18 iron bar at 1449; picked up 54 coal from my standing bid. Net worth 215,624gp."
   }
  ],
  "geSeen": {
@@ -2656,6 +2672,11 @@
    "filled": 10,
    "gross": 1500,
    "tax": 75
+  },
+  "34610": {
+   "filled": 52,
+   "gross": 6500,
+   "tax": 0
   }
  },
  "geOffers": [
@@ -2672,7 +2693,7 @@
    "name": "Coal",
    "side": "buy",
    "state": "open",
-   "remaining": 600,
+   "remaining": 548,
    "price": 125,
    "items": 0,
    "coins": 0
@@ -2692,6 +2713,24 @@
    "state": "open",
    "remaining": 1,
    "price": 2598,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Steel bar",
+   "side": "sell",
+   "state": "open",
+   "remaining": 1,
+   "price": 1497,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Iron bar",
+   "side": "sell",
+   "state": "open",
+   "remaining": 18,
+   "price": 1449,
    "items": 0,
    "coins": 0
   }
