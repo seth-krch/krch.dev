@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T23:01:04.698Z",
+ "updatedAt": "2026-10-24T23:04:50.446Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 535,
   "combatLevel": 35,
   "position": {
-   "x": 3269,
-   "z": 3164
+   "x": 3185,
+   "z": 3438
   },
   "skills": {
    "Attack": 28,
@@ -42,10 +42,10 @@
   },
   {
    "item": "Coins",
-   "qty": 66575,
+   "qty": 70280,
    "where": "inventory",
    "mark": 1,
-   "value": 66575
+   "value": 70280
   },
   {
    "item": "Steel bar",
@@ -60,6 +60,13 @@
    "where": "GE",
    "mark": 223,
    "value": 3791
+  },
+  {
+   "item": "Coal",
+   "qty": 26,
+   "where": "bank",
+   "mark": 125,
+   "value": 3250
   },
   {
    "item": "Uncut ruby",
@@ -351,6 +358,10 @@
   {
    "name": "Steel bar",
    "count": 50
+  },
+  {
+   "name": "Coal",
+   "count": 26
   }
  ],
  "trades": [
@@ -1566,6 +1577,29 @@
    "price": 0,
    "total": 0,
    "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 104,
+   "t": "2026-10-24T23:04:39.197Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Coal",
+   "qty": 26,
+   "price": 125,
+   "total": -3250,
+   "counterparty": "GE"
+  },
+  {
+   "id": 105,
+   "t": "2026-10-24T23:04:42.477Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 26,
+   "price": 142.5,
+   "total": 3705,
+   "counterparty": "GE",
+   "note": "tax 195gp"
   }
  ],
  "history": [
@@ -2018,6 +2052,11 @@
    "t": "2026-10-24T23:01:02.279Z",
    "coins": 191600,
    "netWorth": 218379
+  },
+  {
+   "t": "2026-10-24T23:04:50.442Z",
+   "coins": 195305,
+   "netWorth": 225334
   }
  ],
  "journal": [
@@ -2572,6 +2611,10 @@
   {
    "t": "2026-10-24T23:01:04.698Z",
    "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
+  },
+  {
+   "t": "2026-10-24T23:04:50.446Z",
+   "msg": "Trip 1: sold 26 iron ore at 150gp into the GE bids. Coins 195,305, net worth 225,334gp."
   }
  ],
  "geSeen": {
@@ -2989,6 +3032,16 @@
    "filled": 25,
    "gross": 3750,
    "tax": 187
+  },
+  "35135": {
+   "filled": 26,
+   "gross": 3250,
+   "tax": 0
+  },
+  "35257": {
+   "filled": 26,
+   "gross": 3900,
+   "tax": 195
   }
  },
  "geOffers": [
