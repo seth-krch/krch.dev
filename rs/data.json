@@ -1,10 +1,10 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T00:05:46.164Z",
+ "updatedAt": "2026-10-24T00:17:46.977Z",
  "status": "Mining iron ore → selling into the GE bid",
  "stats": {
-  "totalLevel": 460,
+  "totalLevel": 466,
   "combatLevel": 35,
   "position": {
    "x": 3181,
@@ -25,7 +25,7 @@
    "Firemaking": 40,
    "Crafting": 1,
    "Smithing": 25,
-   "Mining": 51,
+   "Mining": 57,
    "Herblore": 1,
    "Agility": 1,
    "Thieving": 38,
@@ -41,18 +41,18 @@
    "value": 6880
   },
   {
+   "item": "Coins",
+   "qty": 3522,
+   "where": "inventory",
+   "mark": 1,
+   "value": 3522
+  },
+  {
    "item": "Feather",
    "qty": 30,
    "where": "bank",
    "mark": 40,
    "value": 1200
-  },
-  {
-   "item": "Coins",
-   "qty": 637,
-   "where": "inventory",
-   "mark": 1,
-   "value": 637
   },
   {
    "item": "Anchovies",
@@ -162,7 +162,7 @@
   {
    "item": "Shrimps",
    "qty": 5,
-   "where": "inventory",
+   "where": "bank",
    "mark": 2,
    "value": 10
   },
@@ -183,7 +183,7 @@
   {
    "item": "Shortbow",
    "qty": 1,
-   "where": "inventory",
+   "where": "bank",
    "mark": 1,
    "value": 1
   }
@@ -244,6 +244,14 @@
   {
    "name": "Bread",
    "count": 1
+  },
+  {
+   "name": "Shortbow",
+   "count": 1
+  },
+  {
+   "name": "Shrimps",
+   "count": 5
   }
  ],
  "trades": [
@@ -412,6 +420,18 @@
    "total": 2375,
    "counterparty": "GE",
    "note": "tax 125gp"
+  },
+  {
+   "id": 15,
+   "t": "2026-10-24T00:17:40.479Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 23,
+   "price": 125.43,
+   "total": 2885,
+   "counterparty": "GE",
+   "note": "tax 151gp"
   }
  ],
  "history": [
@@ -464,6 +484,11 @@
    "t": "2026-10-23T23:58:10.155Z",
    "coins": 7542,
    "netWorth": 11372
+  },
+  {
+   "t": "2026-10-24T00:17:46.973Z",
+   "coins": 10427,
+   "netWorth": 14257
   }
  ],
  "journal": [
@@ -530,6 +555,10 @@
   {
    "t": "2026-10-24T00:05:46.164Z",
    "msg": "Heading out to mine iron ore for the GE buy order."
+  },
+  {
+   "t": "2026-10-24T00:17:46.977Z",
+   "msg": "Trip 1: sold 23 iron ore at 132gp into the GE bid. Coins 10,427, net worth 14,257gp."
   }
  ],
  "geSeen": {
@@ -582,6 +611,11 @@
    "filled": 1,
    "gross": 2500,
    "tax": 125
+  },
+  "30336": {
+   "filled": 23,
+   "gross": 3036,
+   "tax": 151
   }
  },
  "geOffers": [
