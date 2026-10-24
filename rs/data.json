@@ -1,7 +1,7 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T08:06:55.037Z",
+ "updatedAt": "2026-10-24T08:17:49.532Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 507,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 100399,
+   "qty": 103962,
    "where": "inventory",
    "mark": 1,
-   "value": 100399
+   "value": 103962
   },
   {
    "item": "Coins",
@@ -88,6 +88,13 @@
    "where": "bank",
    "mark": 10,
    "value": 300
+  },
+  {
+   "item": "Air rune",
+   "qty": 45,
+   "where": "inventory",
+   "mark": 6,
+   "value": 270
   },
   {
    "item": "Air rune",
@@ -1066,6 +1073,29 @@
    "total": 3705,
    "counterparty": "GE",
    "note": "tax 195gp"
+  },
+  {
+   "id": 66,
+   "t": "2026-10-24T08:17:42.238Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Air rune",
+   "qty": 45,
+   "price": 6,
+   "total": -270,
+   "counterparty": "GE"
+  },
+  {
+   "id": 67,
+   "t": "2026-10-24T08:17:45.263Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 25,
+   "price": 142.52,
+   "total": 3563,
+   "counterparty": "GE",
+   "note": "tax 187gp"
   }
  ],
  "history": [
@@ -1378,6 +1408,11 @@
    "t": "2026-10-24T08:06:23.429Z",
    "coins": 160258,
    "netWorth": 168138
+  },
+  {
+   "t": "2026-10-24T08:17:49.528Z",
+   "coins": 163821,
+   "netWorth": 171971
   }
  ],
  "journal": [
@@ -1752,6 +1787,10 @@
   {
    "t": "2026-10-24T08:06:55.037Z",
    "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
+  },
+  {
+   "t": "2026-10-24T08:17:49.532Z",
+   "msg": "Trip 1: sold 25 iron ore at 150gp into the GE bids. Coins 163,821, net worth 171,971gp."
   }
  ],
  "geSeen": {
@@ -1950,6 +1989,11 @@
    "gross": 3000,
    "tax": 150
   },
+  "31182": {
+   "filled": 45,
+   "gross": 270,
+   "tax": 0
+  },
   "31227": {
    "filled": 25,
    "gross": 3750,
@@ -2059,6 +2103,11 @@
    "filled": 26,
    "gross": 3900,
    "tax": 195
+  },
+  "31728": {
+   "filled": 25,
+   "gross": 3750,
+   "tax": 187
   }
  },
  "geOffers": [
