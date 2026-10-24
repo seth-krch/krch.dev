@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T00:04:38.806Z",
- "status": "Market making on the Grand Exchange",
+ "updatedAt": "2026-10-24T00:05:46.164Z",
+ "status": "Mining iron ore → selling into the GE bid",
  "stats": {
   "totalLevel": 460,
   "combatLevel": 35,
@@ -526,6 +526,10 @@
   {
    "t": "2026-10-23T23:54:45.550Z",
    "msg": "Market-making cycle 10: coins 7,542, net worth 11,372gp."
+  },
+  {
+   "t": "2026-10-24T00:05:46.164Z",
+   "msg": "Heading out to mine iron ore for the GE buy order."
   }
  ],
  "geSeen": {
