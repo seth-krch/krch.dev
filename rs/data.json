@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T21:26:52.110Z",
+ "updatedAt": "2026-10-24T21:52:17.277Z",
  "status": "Training Smithing → steel bars",
  "stats": {
-  "totalLevel": 508,
+  "totalLevel": 517,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3275,
+   "z": 3185
   },
   "skills": {
    "Attack": 28,
@@ -24,7 +24,7 @@
    "Fishing": 36,
    "Firemaking": 40,
    "Crafting": 1,
-   "Smithing": 25,
+   "Smithing": 34,
    "Mining": 99,
    "Herblore": 1,
    "Agility": 1,
@@ -42,10 +42,10 @@
   },
   {
    "item": "Coins",
-   "qty": 72187,
+   "qty": 72177,
    "where": "inventory",
    "mark": 1,
-   "value": 72187
+   "value": 72177
   },
   {
    "item": "Uncut emerald",
@@ -53,6 +53,20 @@
    "where": "bank",
    "mark": 2500,
    "value": 2500
+  },
+  {
+   "item": "Uncut ruby",
+   "qty": 1,
+   "where": "bank",
+   "mark": 2500,
+   "value": 2500
+  },
+  {
+   "item": "Iron bar",
+   "qty": 18,
+   "where": "bank",
+   "mark": 100,
+   "value": 1800
   },
   {
    "item": "Feather",
@@ -76,6 +90,13 @@
    "value": 500
   },
   {
+   "item": "Earth rune",
+   "qty": 4,
+   "where": "bank",
+   "mark": 110,
+   "value": 440
+  },
+  {
    "item": "Raw shrimps",
    "qty": 4,
    "where": "bank",
@@ -85,16 +106,16 @@
   {
    "item": "Air rune",
    "qty": 81,
-   "where": "inventory",
+   "where": "bank",
    "mark": 4,
    "value": 324
   },
   {
-   "item": "Earth rune",
-   "qty": 4,
-   "where": "bank",
-   "mark": 80,
-   "value": 320
+   "item": "Iron ore",
+   "qty": 2,
+   "where": "inventory",
+   "mark": 150,
+   "value": 300
   },
   {
    "item": "Headless arrow",
@@ -127,7 +148,7 @@
   {
    "item": "Iron ore",
    "qty": 1,
-   "where": "inventory",
+   "where": "bank",
    "mark": 150,
    "value": 150
   },
@@ -139,14 +160,14 @@
    "value": 120
   },
   {
-   "item": "Law rune",
+   "item": "Small fishing net",
    "qty": 1,
-   "where": "inventory",
+   "where": "bank",
    "mark": 100,
    "value": 100
   },
   {
-   "item": "Small fishing net",
+   "item": "Law rune",
    "qty": 1,
    "where": "bank",
    "mark": 100,
@@ -309,6 +330,26 @@
   },
   {
    "name": "Uncut emerald",
+   "count": 1
+  },
+  {
+   "name": "Air rune",
+   "count": 81
+  },
+  {
+   "name": "Iron ore",
+   "count": 1
+  },
+  {
+   "name": "Law rune",
+   "count": 1
+  },
+  {
+   "name": "Iron bar",
+   "count": 18
+  },
+  {
+   "name": "Uncut ruby",
    "count": 1
   }
  ],
@@ -1336,6 +1377,28 @@
    "price": 1000,
    "total": -1000,
    "counterparty": "GE"
+  },
+  {
+   "id": 87,
+   "t": "2026-10-24T21:37:04.968Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Iron bar",
+   "qty": 6,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 88,
+   "t": "2026-10-24T21:49:28.354Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Iron bar",
+   "qty": 12,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
   }
  ],
  "history": [
@@ -1728,6 +1791,11 @@
    "t": "2026-10-24T21:22:42.896Z",
    "coins": 203206,
    "netWorth": 210941
+  },
+  {
+   "t": "2026-10-24T21:52:17.277Z",
+   "coins": 203196,
+   "netWorth": 215651
   }
  ],
  "journal": [
