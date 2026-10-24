@@ -1,7 +1,7 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T22:45:53.885Z",
+ "updatedAt": "2026-10-24T22:46:37.496Z",
  "status": "Market making on the Grand Exchange",
  "stats": {
   "totalLevel": 531,
@@ -35,22 +35,22 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 141575,
-   "where": "inventory",
+   "qty": 125000,
+   "where": "GE",
    "mark": 1,
-   "value": 141575
+   "value": 125000
   },
   {
    "item": "Coins",
-   "qty": 50000,
-   "where": "GE",
+   "qty": 66575,
+   "where": "inventory",
    "mark": 1,
-   "value": 50000
+   "value": 66575
   },
   {
    "item": "Steel bar",
    "qty": 24,
-   "where": "inventory",
+   "where": "GE",
    "mark": 223,
    "value": 5352
   },
@@ -85,7 +85,7 @@
   {
    "item": "Iron bar",
    "qty": 18,
-   "where": "inventory",
+   "where": "GE",
    "mark": 100,
    "value": 1800
   },
@@ -169,14 +169,14 @@
   {
    "item": "Law rune",
    "qty": 1,
-   "where": "inventory",
+   "where": "bank",
    "mark": 101,
    "value": 101
   },
   {
    "item": "Law rune",
    "qty": 1,
-   "where": "bank",
+   "where": "GE",
    "mark": 101,
    "value": 101
   },
@@ -2500,6 +2500,10 @@
   {
    "t": "2026-10-24T22:45:53.885Z",
    "msg": "Tidied the GE: dropped my old steel and law bids (I make steel now), merged steel listings into one, sold carried ore. Net worth 216,740gp."
+  },
+  {
+   "t": "2026-10-24T22:46:37.496Z",
+   "msg": "Re-listed steel and iron bars under the best ask and restored the 600-coal bid at 125. Net worth 216,740gp."
   }
  ],
  "geSeen": {
@@ -2921,11 +2925,47 @@
  },
  "geOffers": [
   {
+   "name": "Steel bar",
+   "side": "sell",
+   "state": "open",
+   "remaining": 24,
+   "price": 1493,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Iron bar",
+   "side": "sell",
+   "state": "open",
+   "remaining": 18,
+   "price": 1449,
+   "items": 0,
+   "coins": 0
+  },
+  {
    "name": "Rune pickaxe",
    "side": "buy",
    "state": "open",
    "remaining": 1,
    "price": 50000,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Law rune",
+   "side": "sell",
+   "state": "open",
+   "remaining": 1,
+   "price": 2574,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Coal",
+   "side": "buy",
+   "state": "open",
+   "remaining": 600,
+   "price": 125,
    "items": 0,
    "coins": 0
   }
