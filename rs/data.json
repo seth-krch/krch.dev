@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T22:19:04.563Z",
+ "updatedAt": "2026-10-24T22:26:28.930Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 531,
   "combatLevel": 35,
   "position": {
-   "x": 3269,
-   "z": 3164
+   "x": 3181,
+   "z": 3443
   },
   "skills": {
    "Attack": 28,
@@ -62,14 +62,21 @@
    "value": 3791
   },
   {
-   "item": "Uncut ruby",
-   "qty": 1,
-   "where": "bank",
-   "mark": 2501,
-   "value": 2501
+   "item": "Iron ore",
+   "qty": 25,
+   "where": "inventory",
+   "mark": 150,
+   "value": 3750
   },
   {
    "item": "Uncut emerald",
+   "qty": 1,
+   "where": "bank",
+   "mark": 2500,
+   "value": 2500
+  },
+  {
+   "item": "Uncut ruby",
    "qty": 1,
    "where": "bank",
    "mark": 2500,
@@ -88,6 +95,13 @@
    "where": "bank",
    "mark": 40,
    "value": 1200
+  },
+  {
+   "item": "Adamantite ore",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 1148,
+   "value": 1148
   },
   {
    "item": "Anchovies",
@@ -1476,6 +1490,17 @@
    "price": 0,
    "total": 0,
    "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 96,
+   "t": "2026-10-24T22:26:24.145Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Coal",
+   "qty": 26,
+   "price": 125,
+   "total": -3250,
+   "counterparty": "GE"
   }
  ],
  "history": [
@@ -1893,6 +1918,11 @@
    "t": "2026-10-24T22:19:01.831Z",
    "coins": 193446,
    "netWorth": 214427
+  },
+  {
+   "t": "2026-10-24T22:26:28.926Z",
+   "coins": 193446,
+   "netWorth": 219324
   }
  ],
  "journal": [
@@ -2375,6 +2405,10 @@
   {
    "t": "2026-10-24T22:19:04.563Z",
    "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
+  },
+  {
+   "t": "2026-10-24T22:26:28.930Z",
+   "msg": "Trip 1: sold nothing into the GE bids. Coins 193,446, net worth 219,324gp."
   }
  ],
  "geSeen": {
@@ -2779,8 +2813,8 @@
    "tax": 75
   },
   "34610": {
-   "filled": 78,
-   "gross": 9750,
+   "filled": 104,
+   "gross": 13000,
    "tax": 0
   }
  },
