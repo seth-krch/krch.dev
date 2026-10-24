@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T23:28:28.669Z",
+ "updatedAt": "2026-10-24T23:31:55.559Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 539,
   "combatLevel": 35,
   "position": {
-   "x": 3269,
-   "z": 3164
+   "x": 3185,
+   "z": 3438
   },
   "skills": {
    "Attack": 28,
@@ -42,10 +42,10 @@
   },
   {
    "item": "Coins",
-   "qty": 73985,
+   "qty": 78925,
    "where": "inventory",
    "mark": 1,
-   "value": 73985
+   "value": 78925
   },
   {
    "item": "Steel bar",
@@ -62,18 +62,25 @@
    "value": 9589
   },
   {
+   "item": "Uncut emerald",
+   "qty": 2,
+   "where": "bank",
+   "mark": 2500,
+   "value": 5000
+  },
+  {
+   "item": "Coal",
+   "qty": 26,
+   "where": "bank",
+   "mark": 125,
+   "value": 3250
+  },
+  {
    "item": "Uncut ruby",
    "qty": 1,
    "where": "bank",
    "mark": 2501,
    "value": 2501
-  },
-  {
-   "item": "Uncut emerald",
-   "qty": 1,
-   "where": "bank",
-   "mark": 2500,
-   "value": 2500
   },
   {
    "item": "Iron bar",
@@ -323,7 +330,7 @@
   },
   {
    "name": "Uncut emerald",
-   "count": 1
+   "count": 2
   },
   {
    "name": "Air rune",
@@ -344,6 +351,10 @@
   {
    "name": "Steel bar",
    "count": 43
+  },
+  {
+   "name": "Coal",
+   "count": 26
   }
  ],
  "trades": [
@@ -1649,6 +1660,41 @@
    "price": 0,
    "total": 0,
    "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 112,
+   "t": "2026-10-24T23:31:47.036Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron bar",
+   "qty": 1,
+   "price": 1377,
+   "total": 1377,
+   "counterparty": "GE",
+   "note": "tax 72gp"
+  },
+  {
+   "id": 113,
+   "t": "2026-10-24T23:31:47.037Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Coal",
+   "qty": 26,
+   "price": 125,
+   "total": -3250,
+   "counterparty": "GE"
+  },
+  {
+   "id": 114,
+   "t": "2026-10-24T23:31:49.121Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 25,
+   "price": 142.52,
+   "total": 3563,
+   "counterparty": "GE",
+   "note": "tax 187gp"
   }
  ],
  "history": [
@@ -2126,6 +2172,11 @@
    "t": "2026-10-24T23:28:26.265Z",
    "coins": 192510,
    "netWorth": 225085
+  },
+  {
+   "t": "2026-10-24T23:31:55.556Z",
+   "coins": 197450,
+   "netWorth": 235775
   }
  ],
  "journal": [
@@ -2712,6 +2763,10 @@
   {
    "t": "2026-10-24T23:28:28.669Z",
    "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
+  },
+  {
+   "t": "2026-10-24T23:31:55.559Z",
+   "msg": "Trip 1: sold 25 iron ore at 150gp into the GE bids. Coins 197,450, net worth 235,775gp."
   }
  ],
  "geSeen": {
@@ -3130,9 +3185,14 @@
    "gross": 3750,
    "tax": 187
   },
+  "35133": {
+   "filled": 1,
+   "gross": 1449,
+   "tax": 72
+  },
   "35135": {
-   "filled": 52,
-   "gross": 6500,
+   "filled": 78,
+   "gross": 9750,
    "tax": 0
   },
   "35257": {
@@ -3144,6 +3204,11 @@
    "filled": 26,
    "gross": 3900,
    "tax": 195
+  },
+  "35444": {
+   "filled": 25,
+   "gross": 3750,
+   "tax": 187
   }
  },
  "geOffers": [
