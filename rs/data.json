@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T06:27:12.176Z",
+ "updatedAt": "2026-10-24T06:28:16.088Z",
  "status": "Mining iron ore → selling into the GE bid",
  "stats": {
   "totalLevel": 503,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3284,
+   "z": 3370
   },
   "skills": {
    "Attack": 28,
