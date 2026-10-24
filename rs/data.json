@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T22:59:09.938Z",
+ "updatedAt": "2026-10-24T23:01:02.283Z",
  "status": "Smelting steel bars",
  "stats": {
   "totalLevel": 535,
   "combatLevel": 35,
   "position": {
-   "x": 3275,
-   "z": 3185
+   "x": 3269,
+   "z": 3164
   },
   "skills": {
    "Attack": 28,
@@ -49,10 +49,10 @@
   },
   {
    "item": "Steel bar",
-   "qty": 40,
+   "qty": 50,
    "where": "bank",
    "mark": 223,
-   "value": 8920
+   "value": 11150
   },
   {
    "item": "Steel bar",
@@ -81,13 +81,6 @@
    "where": "GE",
    "mark": 100,
    "value": 1800
-  },
-  {
-   "item": "Steel bar",
-   "qty": 8,
-   "where": "inventory",
-   "mark": 223,
-   "value": 1784
   },
   {
    "item": "Feather",
@@ -144,20 +137,6 @@
    "where": "bank",
    "mark": 100,
    "value": 300
-  },
-  {
-   "item": "Coal",
-   "qty": 2,
-   "where": "inventory",
-   "mark": 125,
-   "value": 250
-  },
-  {
-   "item": "Coal",
-   "qty": 2,
-   "where": "bank",
-   "mark": 125,
-   "value": 250
   },
   {
    "item": "Bronze arrow",
@@ -370,12 +349,8 @@
    "count": 1
   },
   {
-   "name": "Coal",
-   "count": 2
-  },
-  {
    "name": "Steel bar",
-   "count": 40
+   "count": 50
   }
  ],
  "trades": [
@@ -1580,6 +1555,17 @@
    "price": 0,
    "total": 0,
    "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 103,
+   "t": "2026-10-24T23:00:51.547Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 2,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
   }
  ],
  "history": [
@@ -2027,6 +2013,11 @@
    "t": "2026-10-24T22:59:09.938Z",
    "coins": 191600,
    "netWorth": 218433
+  },
+  {
+   "t": "2026-10-24T23:01:02.279Z",
+   "coins": 191600,
+   "netWorth": 218379
   }
  ],
  "journal": [
@@ -2573,6 +2564,10 @@
   {
    "t": "2026-10-24T22:47:25.531Z",
    "msg": "Started bar production at the Al Kharid furnace (Smithing 48)."
+  },
+  {
+   "t": "2026-10-24T23:01:02.283Z",
+   "msg": "Bar production: 26 steel and 0 iron bars banked in Al Kharid. Smithing 52. Net worth 218,379gp."
   }
  ],
  "geSeen": {
