@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T03:53:26.739Z",
- "status": "Mining iron ore → selling into the GE bid",
+ "updatedAt": "2026-10-24T03:53:49.893Z",
+ "status": "Market making on the Grand Exchange",
  "stats": {
   "totalLevel": 496,
   "combatLevel": 35,
@@ -35,17 +35,17 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 62289,
+   "qty": 62437,
    "where": "inventory",
    "mark": 1,
-   "value": 62289
+   "value": 62437
   },
   {
    "item": "Coins",
-   "qty": 14980,
+   "qty": 13707,
    "where": "GE",
    "mark": 1,
-   "value": 14980
+   "value": 13707
   },
   {
    "item": "Uncut emerald",
@@ -60,13 +60,6 @@
    "where": "bank",
    "mark": 40,
    "value": 1200
-  },
-  {
-   "item": "Law rune",
-   "qty": 1,
-   "where": "inventory",
-   "mark": 1000,
-   "value": 1000
   },
   {
    "item": "Law rune",
@@ -134,7 +127,7 @@
   {
    "item": "Air rune",
    "qty": 25,
-   "where": "inventory",
+   "where": "GE",
    "mark": 5,
    "value": 125
   },
@@ -911,6 +904,11 @@
    "t": "2026-10-24T03:53:24.798Z",
    "coins": 77294,
    "netWorth": 85749
+  },
+  {
+   "t": "2026-10-24T03:53:48.761Z",
+   "coins": 76169,
+   "netWorth": 83624
   }
  ],
  "journal": [
@@ -1085,6 +1083,14 @@
   {
    "t": "2026-10-24T03:53:24.799Z",
    "msg": "Trip 3: sold 21 iron ore at 150gp into the GE bid. Coins 77,294, net worth 85,749gp."
+  },
+  {
+   "t": "2026-10-24T03:53:29.096Z",
+   "msg": "Switched to GE market making: bidding just above the best bid and relisting just under the best ask on steel bar, air rune, law rune."
+  },
+  {
+   "t": "2026-10-24T03:53:49.893Z",
+   "msg": "Market-making cycle 1: coins 76,169, net worth 83,624gp."
   }
  ],
  "geSeen": {
@@ -1264,8 +1270,8 @@
    "name": "Steel bar",
    "side": "buy",
    "state": "open",
-   "remaining": 30,
-   "price": 206,
+   "remaining": 29,
+   "price": 208,
    "items": 0,
    "coins": 0
   },
@@ -1273,17 +1279,17 @@
    "name": "Air rune",
    "side": "buy",
    "state": "open",
-   "remaining": 600,
+   "remaining": 575,
    "price": 5,
    "items": 0,
    "coins": 0
   },
   {
-   "name": "Law rune",
+   "name": "Air rune",
    "side": "sell",
    "state": "open",
-   "remaining": 1,
-   "price": 3000,
+   "remaining": 25,
+   "price": 24,
    "items": 0,
    "coins": 0
   },
@@ -1300,8 +1306,17 @@
    "name": "Law rune",
    "side": "buy",
    "state": "open",
-   "remaining": 2,
+   "remaining": 1,
    "price": 1000,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Law rune",
+   "side": "sell",
+   "state": "open",
+   "remaining": 1,
+   "price": 2576,
    "items": 0,
    "coins": 0
   }
