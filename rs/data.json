@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T23:01:02.283Z",
- "status": "Smelting steel bars",
+ "updatedAt": "2026-10-24T23:01:04.698Z",
+ "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 535,
   "combatLevel": 35,
@@ -2568,6 +2568,10 @@
   {
    "t": "2026-10-24T23:01:02.283Z",
    "msg": "Bar production: 26 steel and 0 iron bars banked in Al Kharid. Smithing 52. Net worth 218,379gp."
+  },
+  {
+   "t": "2026-10-24T23:01:04.698Z",
+   "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
   }
  ],
  "geSeen": {
