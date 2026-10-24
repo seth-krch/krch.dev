@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T22:09:58.579Z",
- "status": "Smelting steel bars",
+ "updatedAt": "2026-10-24T22:13:00.039Z",
+ "status": "Steel bars: Al Kharid furnace → GE",
  "stats": {
   "totalLevel": 527,
   "combatLevel": 35,
   "position": {
-   "x": 3275,
-   "z": 3185
+   "x": 3181,
+   "z": 3443
   },
   "skills": {
    "Attack": 28,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 124494,
+   "qty": 121244,
    "where": "GE",
    "mark": 1,
-   "value": 124494
+   "value": 121244
   },
   {
    "item": "Coins",
@@ -49,20 +49,27 @@
   },
   {
    "item": "Steel bar",
-   "qty": 16,
-   "where": "bank",
+   "qty": 24,
+   "where": "GE",
    "mark": 223,
-   "value": 3568
+   "value": 5352
   },
   {
-   "item": "Uncut emerald",
-   "qty": 1,
-   "where": "bank",
-   "mark": 2500,
-   "value": 2500
+   "item": "Coal",
+   "qty": 32,
+   "where": "inventory",
+   "mark": 125,
+   "value": 4000
   },
   {
    "item": "Uncut ruby",
+   "qty": 1,
+   "where": "bank",
+   "mark": 2501,
+   "value": 2501
+  },
+  {
+   "item": "Uncut emerald",
    "qty": 1,
    "where": "bank",
    "mark": 2500,
@@ -74,13 +81,6 @@
    "where": "GE",
    "mark": 100,
    "value": 1800
-  },
-  {
-   "item": "Steel bar",
-   "qty": 8,
-   "where": "inventory",
-   "mark": 223,
-   "value": 1784
   },
   {
    "item": "Feather",
@@ -95,13 +95,6 @@
    "where": "bank",
    "mark": 300,
    "value": 600
-  },
-  {
-   "item": "Coal",
-   "qty": 4,
-   "where": "bank",
-   "mark": 125,
-   "value": 500
   },
   {
    "item": "Iron ore",
@@ -146,13 +139,6 @@
    "value": 300
   },
   {
-   "item": "Coal",
-   "qty": 2,
-   "where": "inventory",
-   "mark": 125,
-   "value": 250
-  },
-  {
    "item": "Bronze arrow",
    "qty": 12,
    "where": "bank",
@@ -169,7 +155,7 @@
   {
    "item": "Steel bar",
    "qty": 1,
-   "where": "GE",
+   "where": "inventory",
    "mark": 223,
    "value": 223
   },
@@ -181,23 +167,23 @@
    "value": 120
   },
   {
-   "item": "Small fishing net",
-   "qty": 1,
-   "where": "bank",
-   "mark": 100,
-   "value": 100
-  },
-  {
    "item": "Law rune",
    "qty": 1,
    "where": "bank",
-   "mark": 100,
-   "value": 100
+   "mark": 101,
+   "value": 101
   },
   {
    "item": "Law rune",
    "qty": 1,
    "where": "GE",
+   "mark": 101,
+   "value": 101
+  },
+  {
+   "item": "Small fishing net",
+   "qty": 1,
+   "where": "bank",
    "mark": 100,
    "value": 100
   },
@@ -368,14 +354,6 @@
   {
    "name": "Uncut ruby",
    "count": 1
-  },
-  {
-   "name": "Coal",
-   "count": 4
-  },
-  {
-   "name": "Steel bar",
-   "count": 16
   }
  ],
  "trades": [
@@ -1468,6 +1446,17 @@
    "price": 0,
    "total": 0,
    "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 93,
+   "t": "2026-10-24T22:12:48.012Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Coal",
+   "qty": 26,
+   "price": 125,
+   "total": -3250,
+   "counterparty": "GE"
   }
  ],
  "history": [
@@ -1875,6 +1864,11 @@
    "t": "2026-10-24T22:09:58.579Z",
    "coins": 196696,
    "netWorth": 214856
+  },
+  {
+   "t": "2026-10-24T22:12:58.982Z",
+   "coins": 193446,
+   "netWorth": 214859
   }
  ],
  "journal": [
@@ -2341,6 +2335,10 @@
   {
    "t": "2026-10-24T21:58:50.336Z",
    "msg": "Started bar production at the Al Kharid furnace (Smithing 35)."
+  },
+  {
+   "t": "2026-10-24T22:13:00.039Z",
+   "msg": "GE errand: listed 24 steel bar at 1495; picked up 32 coal from my standing bid. Net worth 214,859gp."
   }
  ],
  "geSeen": {
@@ -2745,8 +2743,8 @@
    "tax": 75
   },
   "34610": {
-   "filled": 52,
-   "gross": 6500,
+   "filled": 78,
+   "gross": 9750,
    "tax": 0
   }
  },
@@ -2764,7 +2762,7 @@
    "name": "Coal",
    "side": "buy",
    "state": "open",
-   "remaining": 548,
+   "remaining": 522,
    "price": 125,
    "items": 0,
    "coins": 0
@@ -2791,8 +2789,8 @@
    "name": "Steel bar",
    "side": "sell",
    "state": "open",
-   "remaining": 1,
-   "price": 1497,
+   "remaining": 24,
+   "price": 1495,
    "items": 0,
    "coins": 0
   },
