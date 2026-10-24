@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T09:40:13.130Z",
- "status": "Market making on the Grand Exchange",
+ "updatedAt": "2026-10-24T21:23:24.531Z",
+ "status": "Training Smithing → steel bars",
  "stats": {
   "totalLevel": 508,
   "combatLevel": 35,
@@ -35,17 +35,17 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 144943,
-   "where": "inventory",
+   "qty": 130994,
+   "where": "GE",
    "mark": 1,
-   "value": 144943
+   "value": 130994
   },
   {
    "item": "Coins",
-   "qty": 59724,
-   "where": "GE",
+   "qty": 72187,
+   "where": "inventory",
    "mark": 1,
-   "value": 59724
+   "value": 72187
   },
   {
    "item": "Uncut emerald",
@@ -58,15 +58,8 @@
    "item": "Feather",
    "qty": 30,
    "where": "bank",
-   "mark": 46,
-   "value": 1380
-  },
-  {
-   "item": "Law rune",
-   "qty": 1,
-   "where": "GE",
-   "mark": 1000,
-   "value": 1000
+   "mark": 40,
+   "value": 1200
   },
   {
    "item": "Anchovies",
@@ -76,6 +69,13 @@
    "value": 600
   },
   {
+   "item": "Coal",
+   "qty": 4,
+   "where": "inventory",
+   "mark": 125,
+   "value": 500
+  },
+  {
    "item": "Raw shrimps",
    "qty": 4,
    "where": "bank",
@@ -83,10 +83,31 @@
    "value": 400
   },
   {
+   "item": "Air rune",
+   "qty": 81,
+   "where": "inventory",
+   "mark": 4,
+   "value": 324
+  },
+  {
+   "item": "Earth rune",
+   "qty": 4,
+   "where": "bank",
+   "mark": 80,
+   "value": 320
+  },
+  {
    "item": "Headless arrow",
    "qty": 30,
    "where": "bank",
    "mark": 10,
+   "value": 300
+  },
+  {
+   "item": "Tin ore",
+   "qty": 3,
+   "where": "bank",
+   "mark": 100,
    "value": 300
   },
   {
@@ -97,13 +118,6 @@
    "value": 240
   },
   {
-   "item": "Earth rune",
-   "qty": 4,
-   "where": "bank",
-   "mark": 60,
-   "value": 240
-  },
-  {
    "item": "Bread",
    "qty": 1,
    "where": "bank",
@@ -111,18 +125,11 @@
    "value": 240
   },
   {
-   "item": "Logs",
+   "item": "Iron ore",
    "qty": 1,
-   "where": "bank",
-   "mark": 200,
-   "value": 200
-  },
-  {
-   "item": "Tin ore",
-   "qty": 3,
-   "where": "bank",
-   "mark": 60,
-   "value": 180
+   "where": "inventory",
+   "mark": 150,
+   "value": 150
   },
   {
    "item": "Knife",
@@ -132,11 +139,39 @@
    "value": 120
   },
   {
+   "item": "Law rune",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 100,
+   "value": 100
+  },
+  {
    "item": "Small fishing net",
    "qty": 1,
    "where": "bank",
    "mark": 100,
    "value": 100
+  },
+  {
+   "item": "Law rune",
+   "qty": 1,
+   "where": "GE",
+   "mark": 100,
+   "value": 100
+  },
+  {
+   "item": "Logs",
+   "qty": 1,
+   "where": "bank",
+   "mark": 80,
+   "value": 80
+  },
+  {
+   "item": "Copper ore",
+   "qty": 3,
+   "where": "bank",
+   "mark": 20,
+   "value": 60
   },
   {
    "item": "Bronze sword",
@@ -179,13 +214,6 @@
    "where": "bank",
    "mark": 2,
    "value": 10
-  },
-  {
-   "item": "Copper ore",
-   "qty": 3,
-   "where": "bank",
-   "mark": 3,
-   "value": 9
   },
   {
    "item": "Body rune",
@@ -1286,6 +1314,28 @@
    "total": 1425,
    "counterparty": "GE",
    "note": "tax 75gp"
+  },
+  {
+   "id": 85,
+   "t": "2026-10-24T21:22:31.245Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Air rune",
+   "qty": 81,
+   "price": 6,
+   "total": -486,
+   "counterparty": "GE"
+  },
+  {
+   "id": 86,
+   "t": "2026-10-24T21:22:31.246Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Law rune",
+   "qty": 1,
+   "price": 1000,
+   "total": -1000,
+   "counterparty": "GE"
   }
  ],
  "history": [
@@ -1668,6 +1718,16 @@
    "t": "2026-10-24T09:40:11.737Z",
    "coins": 204692,
    "netWorth": 212302
+  },
+  {
+   "t": "2026-10-24T21:22:34.136Z",
+   "coins": 203206,
+   "netWorth": 210923
+  },
+  {
+   "t": "2026-10-24T21:22:42.896Z",
+   "coins": 203206,
+   "netWorth": 210941
   }
  ],
  "journal": [
@@ -2110,6 +2170,18 @@
   {
    "t": "2026-10-24T09:40:13.130Z",
    "msg": "Market-making cycle 1: coins 204,692, net worth 212,302gp."
+  },
+  {
+   "t": "2026-10-24T21:22:32.452Z",
+   "msg": "Cancelled my buy order for Air rune (126/500 filled) to free a GE slot."
+  },
+  {
+   "t": "2026-10-24T21:22:41.343Z",
+   "msg": "Placed a standing GE buy order: 600 × Coal at 125gp."
+  },
+  {
+   "t": "2026-10-24T21:23:24.530Z",
+   "msg": "Started bar production at the Al Kharid furnace (Smithing 25)."
   }
  ],
  "geSeen": {
@@ -2264,8 +2336,8 @@
    "tax": 150
   },
   "30870": {
-   "filled": 1,
-   "gross": 1000,
+   "filled": 2,
+   "gross": 2000,
    "tax": 0
   },
   "30893": {
@@ -2309,8 +2381,8 @@
    "tax": 150
   },
   "31182": {
-   "filled": 45,
-   "gross": 270,
+   "filled": 126,
+   "gross": 756,
    "tax": 0
   },
   "31227": {
@@ -2525,11 +2597,11 @@
    "coins": 0
   },
   {
-   "name": "Air rune",
+   "name": "Coal",
    "side": "buy",
    "state": "open",
-   "remaining": 455,
-   "price": 6,
+   "remaining": 600,
+   "price": 125,
    "items": 0,
    "coins": 0
   },
@@ -2548,15 +2620,6 @@
    "state": "open",
    "remaining": 1,
    "price": 2598,
-   "items": 0,
-   "coins": 0
-  },
-  {
-   "name": "Law rune",
-   "side": "buy",
-   "state": "open",
-   "remaining": 1,
-   "price": 1000,
    "items": 0,
    "coins": 0
   }
