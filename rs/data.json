@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T23:13:36.655Z",
+ "updatedAt": "2026-10-24T23:26:49.581Z",
  "status": "Smelting steel bars",
  "stats": {
-  "totalLevel": 535,
+  "totalLevel": 539,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3275,
+   "z": 3185
   },
   "skills": {
    "Attack": 28,
@@ -24,7 +24,7 @@
    "Fishing": 36,
    "Firemaking": 40,
    "Crafting": 1,
-   "Smithing": 52,
+   "Smithing": 56,
    "Mining": 99,
    "Herblore": 1,
    "Agility": 1,
@@ -55,18 +55,11 @@
    "value": 11150
   },
   {
-   "item": "Coal",
-   "qty": 52,
-   "where": "bank",
-   "mark": 125,
-   "value": 6500
-  },
-  {
    "item": "Steel bar",
-   "qty": 17,
-   "where": "inventory",
+   "qty": 33,
+   "where": "bank",
    "mark": 223,
-   "value": 3791
+   "value": 7359
   },
   {
    "item": "Uncut ruby",
@@ -88,6 +81,13 @@
    "where": "GE",
    "mark": 100,
    "value": 1800
+  },
+  {
+   "item": "Steel bar",
+   "qty": 8,
+   "where": "inventory",
+   "mark": 223,
+   "value": 1784
   },
   {
    "item": "Feather",
@@ -146,6 +146,20 @@
    "value": 300
   },
   {
+   "item": "Coal",
+   "qty": 2,
+   "where": "inventory",
+   "mark": 125,
+   "value": 250
+  },
+  {
+   "item": "Coal",
+   "qty": 2,
+   "where": "bank",
+   "mark": 125,
+   "value": 250
+  },
+  {
    "item": "Bronze arrow",
    "qty": 12,
    "where": "bank",
@@ -160,25 +174,18 @@
    "value": 240
   },
   {
+   "item": "Law rune",
+   "qty": 2,
+   "where": "bank",
+   "mark": 100,
+   "value": 200
+  },
+  {
    "item": "Knife",
    "qty": 1,
    "where": "bank",
    "mark": 120,
    "value": 120
-  },
-  {
-   "item": "Law rune",
-   "qty": 1,
-   "where": "inventory",
-   "mark": 101,
-   "value": 101
-  },
-  {
-   "item": "Law rune",
-   "qty": 1,
-   "where": "bank",
-   "mark": 101,
-   "value": 101
   },
   {
    "item": "Small fishing net",
@@ -349,7 +356,7 @@
   },
   {
    "name": "Law rune",
-   "count": 1
+   "count": 2
   },
   {
    "name": "Uncut ruby",
@@ -357,7 +364,11 @@
   },
   {
    "name": "Coal",
-   "count": 52
+   "count": 2
+  },
+  {
+   "name": "Steel bar",
+   "count": 33
   }
  ],
  "trades": [
@@ -1619,6 +1630,39 @@
    "total": 3705,
    "counterparty": "GE",
    "note": "tax 195gp"
+  },
+  {
+   "id": 108,
+   "t": "2026-10-24T23:19:02.134Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 109,
+   "t": "2026-10-24T23:24:43.056Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 110,
+   "t": "2026-10-24T23:26:47.904Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
   }
  ],
  "history": [
@@ -2086,6 +2130,11 @@
    "t": "2026-10-24T23:12:06.804Z",
    "coins": 192510,
    "netWorth": 225789
+  },
+  {
+   "t": "2026-10-24T23:26:49.581Z",
+   "coins": 192510,
+   "netWorth": 225139
   }
  ],
  "journal": [
