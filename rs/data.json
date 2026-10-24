@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T22:46:37.496Z",
- "status": "Market making on the Grand Exchange",
+ "updatedAt": "2026-10-24T22:47:19.009Z",
+ "status": "Steel bars: Al Kharid furnace → GE",
  "stats": {
   "totalLevel": 531,
   "combatLevel": 35,
@@ -48,23 +48,23 @@
    "value": 66575
   },
   {
+   "item": "Coal",
+   "qty": 52,
+   "where": "inventory",
+   "mark": 125,
+   "value": 6500
+  },
+  {
    "item": "Steel bar",
    "qty": 24,
-   "where": "GE",
+   "where": "inventory",
    "mark": 223,
    "value": 5352
   },
   {
-   "item": "Coal",
-   "qty": 52,
-   "where": "inventory",
-   "mark": 80,
-   "value": 4160
-  },
-  {
    "item": "Steel bar",
    "qty": 17,
-   "where": "bank",
+   "where": "GE",
    "mark": 223,
    "value": 3791
   },
@@ -354,10 +354,6 @@
   {
    "name": "Uncut ruby",
    "count": 1
-  },
-  {
-   "name": "Steel bar",
-   "count": 17
   }
  ],
  "trades": [
@@ -1966,6 +1962,11 @@
    "t": "2026-10-24T22:45:53.102Z",
    "coins": 191600,
    "netWorth": 216740
+  },
+  {
+   "t": "2026-10-24T22:47:18.017Z",
+   "coins": 191600,
+   "netWorth": 219080
   }
  ],
  "journal": [
@@ -2504,6 +2505,10 @@
   {
    "t": "2026-10-24T22:46:37.496Z",
    "msg": "Re-listed steel and iron bars under the best ask and restored the 600-coal bid at 125. Net worth 216,740gp."
+  },
+  {
+   "t": "2026-10-24T22:47:19.009Z",
+   "msg": "GE errand: listed 17 steel bar at 1799; picked up 52 coal from my standing bid. Net worth 219,080gp."
   }
  ],
  "geSeen": {
@@ -2928,8 +2933,8 @@
    "name": "Steel bar",
    "side": "sell",
    "state": "open",
-   "remaining": 24,
-   "price": 1493,
+   "remaining": 17,
+   "price": 1799,
    "items": 0,
    "coins": 0
   },
