@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T22:47:25.531Z",
+ "updatedAt": "2026-10-24T22:59:09.938Z",
  "status": "Smelting steel bars",
  "stats": {
-  "totalLevel": 531,
+  "totalLevel": 535,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3275,
+   "z": 3185
   },
   "skills": {
    "Attack": 28,
@@ -24,7 +24,7 @@
    "Fishing": 36,
    "Firemaking": 40,
    "Crafting": 1,
-   "Smithing": 48,
+   "Smithing": 52,
    "Mining": 99,
    "Herblore": 1,
    "Agility": 1,
@@ -48,18 +48,11 @@
    "value": 66575
   },
   {
-   "item": "Coal",
-   "qty": 52,
-   "where": "inventory",
-   "mark": 125,
-   "value": 6500
-  },
-  {
    "item": "Steel bar",
-   "qty": 24,
-   "where": "inventory",
+   "qty": 40,
+   "where": "bank",
    "mark": 223,
-   "value": 5352
+   "value": 8920
   },
   {
    "item": "Steel bar",
@@ -69,14 +62,14 @@
    "value": 3791
   },
   {
-   "item": "Uncut emerald",
+   "item": "Uncut ruby",
    "qty": 1,
    "where": "bank",
-   "mark": 2500,
-   "value": 2500
+   "mark": 2501,
+   "value": 2501
   },
   {
-   "item": "Uncut ruby",
+   "item": "Uncut emerald",
    "qty": 1,
    "where": "bank",
    "mark": 2500,
@@ -88,6 +81,13 @@
    "where": "GE",
    "mark": 100,
    "value": 1800
+  },
+  {
+   "item": "Steel bar",
+   "qty": 8,
+   "where": "inventory",
+   "mark": 223,
+   "value": 1784
   },
   {
    "item": "Feather",
@@ -144,6 +144,20 @@
    "where": "bank",
    "mark": 100,
    "value": 300
+  },
+  {
+   "item": "Coal",
+   "qty": 2,
+   "where": "inventory",
+   "mark": 125,
+   "value": 250
+  },
+  {
+   "item": "Coal",
+   "qty": 2,
+   "where": "bank",
+   "mark": 125,
+   "value": 250
   },
   {
    "item": "Bronze arrow",
@@ -357,7 +371,11 @@
   },
   {
    "name": "Coal",
-   "count": 52
+   "count": 2
+  },
+  {
+   "name": "Steel bar",
+   "count": 40
   }
  ],
  "trades": [
@@ -1529,6 +1547,39 @@
    "total": 3563,
    "counterparty": "GE",
    "note": "tax 187gp"
+  },
+  {
+   "id": 100,
+   "t": "2026-10-24T22:51:31.907Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 101,
+   "t": "2026-10-24T22:55:51.911Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 102,
+   "t": "2026-10-24T22:59:07.868Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
   }
  ],
  "history": [
@@ -1971,6 +2022,11 @@
    "t": "2026-10-24T22:47:18.017Z",
    "coins": 191600,
    "netWorth": 219080
+  },
+  {
+   "t": "2026-10-24T22:59:09.938Z",
+   "coins": 191600,
+   "netWorth": 218433
   }
  ],
  "journal": [
