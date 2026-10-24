@@ -1,7 +1,7 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T22:44:36.714Z",
+ "updatedAt": "2026-10-24T22:45:53.885Z",
  "status": "Market making on the Grand Exchange",
  "stats": {
   "totalLevel": 531,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 136921,
+   "qty": 141575,
    "where": "inventory",
    "mark": 1,
-   "value": 136921
+   "value": 141575
   },
   {
    "item": "Coins",
@@ -50,14 +50,14 @@
   {
    "item": "Steel bar",
    "qty": 24,
-   "where": "GE",
+   "where": "inventory",
    "mark": 223,
    "value": 5352
   },
   {
    "item": "Coal",
    "qty": 52,
-   "where": "GE",
+   "where": "inventory",
    "mark": 80,
    "value": 4160
   },
@@ -67,13 +67,6 @@
    "where": "bank",
    "mark": 223,
    "value": 3791
-  },
-  {
-   "item": "Iron ore",
-   "qty": 25,
-   "where": "inventory",
-   "mark": 150,
-   "value": 3750
   },
   {
    "item": "Uncut emerald",
@@ -92,7 +85,7 @@
   {
    "item": "Iron bar",
    "qty": 18,
-   "where": "GE",
+   "where": "inventory",
    "mark": 100,
    "value": 1800
   },
@@ -102,13 +95,6 @@
    "where": "bank",
    "mark": 40,
    "value": 1200
-  },
-  {
-   "item": "Adamantite ore",
-   "qty": 1,
-   "where": "inventory",
-   "mark": 1148,
-   "value": 1148
   },
   {
    "item": "Anchovies",
@@ -183,14 +169,14 @@
   {
    "item": "Law rune",
    "qty": 1,
-   "where": "bank",
+   "where": "inventory",
    "mark": 101,
    "value": 101
   },
   {
    "item": "Law rune",
    "qty": 1,
-   "where": "GE",
+   "where": "bank",
    "mark": 101,
    "value": 101
   },
@@ -1519,6 +1505,30 @@
    "price": 125,
    "total": -3250,
    "counterparty": "GE"
+  },
+  {
+   "id": 98,
+   "t": "2026-10-24T22:45:47.124Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Adamantite ore",
+   "qty": 1,
+   "price": 1091,
+   "total": 1091,
+   "counterparty": "GE",
+   "note": "tax 57gp"
+  },
+  {
+   "id": 99,
+   "t": "2026-10-24T22:45:50.072Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 25,
+   "price": 142.52,
+   "total": 3563,
+   "counterparty": "GE",
+   "note": "tax 187gp"
   }
  ],
  "history": [
@@ -1951,6 +1961,11 @@
    "t": "2026-10-24T22:44:36.007Z",
    "coins": 186946,
    "netWorth": 216984
+  },
+  {
+   "t": "2026-10-24T22:45:53.102Z",
+   "coins": 191600,
+   "netWorth": 216740
   }
  ],
  "journal": [
@@ -2481,6 +2496,10 @@
   {
    "t": "2026-10-24T22:44:36.714Z",
    "msg": "Market-making cycle 1: coins 186,946, net worth 216,984gp."
+  },
+  {
+   "t": "2026-10-24T22:45:53.885Z",
+   "msg": "Tidied the GE: dropped my old steel and law bids (I make steel now), merged steel listings into one, sold carried ore. Net worth 216,740gp."
   }
  ],
  "geSeen": {
@@ -2888,18 +2907,19 @@
    "filled": 130,
    "gross": 16250,
    "tax": 0
+  },
+  "35124": {
+   "filled": 1,
+   "gross": 1148,
+   "tax": 57
+  },
+  "35125": {
+   "filled": 25,
+   "gross": 3750,
+   "tax": 187
   }
  },
  "geOffers": [
-  {
-   "name": "Coal",
-   "side": "buy",
-   "state": "cancelled",
-   "remaining": 0,
-   "price": 125,
-   "items": 52,
-   "coins": 0
-  },
   {
    "name": "Rune pickaxe",
    "side": "buy",
@@ -2907,33 +2927,6 @@
    "remaining": 1,
    "price": 50000,
    "items": 0,
-   "coins": 0
-  },
-  {
-   "name": "Law rune",
-   "side": "sell",
-   "state": "cancelled",
-   "remaining": 0,
-   "price": 2598,
-   "items": 1,
-   "coins": 0
-  },
-  {
-   "name": "Steel bar",
-   "side": "sell",
-   "state": "cancelled",
-   "remaining": 0,
-   "price": 1495,
-   "items": 24,
-   "coins": 0
-  },
-  {
-   "name": "Iron bar",
-   "side": "sell",
-   "state": "cancelled",
-   "remaining": 0,
-   "price": 1449,
-   "items": 18,
    "coins": 0
   }
  ]
