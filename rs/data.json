@@ -1,7 +1,7 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T09:10:07.170Z",
+ "updatedAt": "2026-10-24T09:19:21.499Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 508,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 130767,
+   "qty": 135278,
    "where": "inventory",
    "mark": 1,
-   "value": 130767
+   "value": 135278
   },
   {
    "item": "Coins",
@@ -58,8 +58,8 @@
    "item": "Feather",
    "qty": 30,
    "where": "bank",
-   "mark": 46,
-   "value": 1380
+   "mark": 40,
+   "value": 1200
   },
   {
    "item": "Law rune",
@@ -1221,6 +1221,30 @@
    "total": 3563,
    "counterparty": "GE",
    "note": "tax 187gp"
+  },
+  {
+   "id": 79,
+   "t": "2026-10-24T09:19:12.387Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Adamantite ore",
+   "qty": 1,
+   "price": 1091,
+   "total": 1091,
+   "counterparty": "GE",
+   "note": "tax 57gp"
+  },
+  {
+   "id": 80,
+   "t": "2026-10-24T09:19:17.218Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 24,
+   "price": 142.5,
+   "total": 3420,
+   "counterparty": "GE",
+   "note": "tax 180gp"
   }
  ],
  "history": [
@@ -1578,6 +1602,11 @@
    "t": "2026-10-24T09:10:07.169Z",
    "coins": 190682,
    "netWorth": 198562
+  },
+  {
+   "t": "2026-10-24T09:19:21.497Z",
+   "coins": 195193,
+   "netWorth": 202893
   }
  ],
  "journal": [
@@ -1996,6 +2025,10 @@
   {
    "t": "2026-10-24T09:10:07.170Z",
    "msg": "Trip 3: sold 25 iron ore at 150gp into the GE bids. Coins 190,682, net worth 198,562gp."
+  },
+  {
+   "t": "2026-10-24T09:19:21.499Z",
+   "msg": "Trip 4: sold 1 adamantite ore at 1148gp, 24 iron ore at 150gp into the GE bids. Coins 195,193, net worth 202,893gp."
   }
  ],
  "geSeen": {
@@ -2368,6 +2401,16 @@
    "filled": 25,
    "gross": 3750,
    "tax": 187
+  },
+  "31884": {
+   "filled": 1,
+   "gross": 1148,
+   "tax": 57
+  },
+  "31885": {
+   "filled": 24,
+   "gross": 3600,
+   "tax": 180
   }
  },
  "geOffers": [
