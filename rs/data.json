@@ -1,7 +1,7 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T23:04:50.446Z",
+ "updatedAt": "2026-10-24T23:11:52.618Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 535,
@@ -42,10 +42,10 @@
   },
   {
    "item": "Coins",
-   "qty": 70280,
+   "qty": 73985,
    "where": "inventory",
    "mark": 1,
-   "value": 70280
+   "value": 73985
   },
   {
    "item": "Steel bar",
@@ -55,18 +55,18 @@
    "value": 11150
   },
   {
+   "item": "Coal",
+   "qty": 52,
+   "where": "bank",
+   "mark": 125,
+   "value": 6500
+  },
+  {
    "item": "Steel bar",
    "qty": 17,
    "where": "GE",
    "mark": 223,
    "value": 3791
-  },
-  {
-   "item": "Coal",
-   "qty": 26,
-   "where": "bank",
-   "mark": 125,
-   "value": 3250
   },
   {
    "item": "Uncut ruby",
@@ -361,7 +361,7 @@
   },
   {
    "name": "Coal",
-   "count": 26
+   "count": 52
   }
  ],
  "trades": [
@@ -1600,6 +1600,29 @@
    "total": 3705,
    "counterparty": "GE",
    "note": "tax 195gp"
+  },
+  {
+   "id": 106,
+   "t": "2026-10-24T23:11:39.132Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Coal",
+   "qty": 26,
+   "price": 125,
+   "total": -3250,
+   "counterparty": "GE"
+  },
+  {
+   "id": 107,
+   "t": "2026-10-24T23:11:41.235Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 26,
+   "price": 142.5,
+   "total": 3705,
+   "counterparty": "GE",
+   "note": "tax 195gp"
   }
  ],
  "history": [
@@ -2057,6 +2080,11 @@
    "t": "2026-10-24T23:04:50.442Z",
    "coins": 195305,
    "netWorth": 225334
+  },
+  {
+   "t": "2026-10-24T23:11:52.616Z",
+   "coins": 199010,
+   "netWorth": 232289
   }
  ],
  "journal": [
@@ -2615,6 +2643,10 @@
   {
    "t": "2026-10-24T23:04:50.446Z",
    "msg": "Trip 1: sold 26 iron ore at 150gp into the GE bids. Coins 195,305, net worth 225,334gp."
+  },
+  {
+   "t": "2026-10-24T23:11:52.618Z",
+   "msg": "Trip 2: sold 26 iron ore at 150gp into the GE bids. Coins 199,010, net worth 232,289gp."
   }
  ],
  "geSeen": {
@@ -3034,11 +3066,16 @@
    "tax": 187
   },
   "35135": {
-   "filled": 26,
-   "gross": 3250,
+   "filled": 52,
+   "gross": 6500,
    "tax": 0
   },
   "35257": {
+   "filled": 26,
+   "gross": 3900,
+   "tax": 195
+  },
+  "35295": {
    "filled": 26,
    "gross": 3900,
    "tax": 195
