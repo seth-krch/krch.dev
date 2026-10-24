@@ -1,10 +1,10 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T05:11:00.697Z",
+ "updatedAt": "2026-10-24T05:23:02.140Z",
  "status": "Mining iron ore → selling into the GE bid",
  "stats": {
-  "totalLevel": 499,
+  "totalLevel": 500,
   "combatLevel": 35,
   "position": {
    "x": 3181,
@@ -25,7 +25,7 @@
    "Firemaking": 40,
    "Crafting": 1,
    "Smithing": 25,
-   "Mining": 90,
+   "Mining": 91,
    "Herblore": 1,
    "Agility": 1,
    "Thieving": 38,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 80352,
+   "qty": 83915,
    "where": "inventory",
    "mark": 1,
-   "value": 80352
+   "value": 83915
   },
   {
    "item": "Coins",
@@ -111,6 +111,13 @@
    "value": 200
   },
   {
+   "item": "Tin ore",
+   "qty": 3,
+   "where": "bank",
+   "mark": 60,
+   "value": 180
+  },
+  {
    "item": "Earth rune",
    "qty": 4,
    "where": "bank",
@@ -175,13 +182,6 @@
   },
   {
    "item": "Copper ore",
-   "qty": 3,
-   "where": "bank",
-   "mark": 3,
-   "value": 9
-  },
-  {
-   "item": "Tin ore",
    "qty": 3,
    "where": "bank",
    "mark": 3,
@@ -807,6 +807,18 @@
    "total": 3563,
    "counterparty": "GE",
    "note": "tax 187gp"
+  },
+  {
+   "id": 45,
+   "t": "2026-10-24T05:22:58.705Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 25,
+   "price": 142.52,
+   "total": 3563,
+   "counterparty": "GE",
+   "note": "tax 187gp"
   }
  ],
  "history": [
@@ -1009,6 +1021,11 @@
    "t": "2026-10-24T05:11:00.693Z",
    "coins": 94267,
    "netWorth": 101426
+  },
+  {
+   "t": "2026-10-24T05:23:02.138Z",
+   "coins": 97830,
+   "netWorth": 105160
   }
  ],
  "journal": [
@@ -1243,6 +1260,10 @@
   {
    "t": "2026-10-24T05:11:00.697Z",
    "msg": "Trip 1: sold 25 iron ore at 150gp into the GE bid. Coins 94,267, net worth 101,426gp."
+  },
+  {
+   "t": "2026-10-24T05:23:02.140Z",
+   "msg": "Trip 2: sold 25 iron ore at 150gp into the GE bid. Coins 97,830, net worth 105,160gp."
   }
  ],
  "geSeen": {
@@ -1442,6 +1463,11 @@
    "tax": 150
   },
   "31227": {
+   "filled": 25,
+   "gross": 3750,
+   "tax": 187
+  },
+  "31281": {
    "filled": 25,
    "gross": 3750,
    "tax": 187
