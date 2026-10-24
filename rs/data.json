@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T23:12:07.591Z",
- "status": "Market making on the Grand Exchange",
+ "updatedAt": "2026-10-24T23:13:34.271Z",
+ "status": "Steel bars: Al Kharid furnace → GE",
  "stats": {
   "totalLevel": 535,
   "combatLevel": 35,
@@ -50,7 +50,7 @@
   {
    "item": "Steel bar",
    "qty": 50,
-   "where": "bank",
+   "where": "GE",
    "mark": 223,
    "value": 11150
   },
@@ -64,7 +64,7 @@
   {
    "item": "Steel bar",
    "qty": 17,
-   "where": "GE",
+   "where": "inventory",
    "mark": 223,
    "value": 3791
   },
@@ -354,10 +354,6 @@
   {
    "name": "Uncut ruby",
    "count": 1
-  },
-  {
-   "name": "Steel bar",
-   "count": 50
   },
   {
    "name": "Coal",
@@ -2660,6 +2656,10 @@
   {
    "t": "2026-10-24T23:12:07.591Z",
    "msg": "Market-making cycle 1: coins 192,510, net worth 225,789gp."
+  },
+  {
+   "t": "2026-10-24T23:13:34.271Z",
+   "msg": "GE errand: listed 50 steel bar at 1497; picked up 0 coal from my standing bid. Net worth 225,789gp."
   }
  ],
  "geSeen": {
@@ -3099,8 +3099,8 @@
    "name": "Steel bar",
    "side": "sell",
    "state": "open",
-   "remaining": 17,
-   "price": 1799,
+   "remaining": 50,
+   "price": 1497,
    "items": 0,
    "coins": 0
   },
