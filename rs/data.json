@@ -1,10 +1,10 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T03:54:38.613Z",
+ "updatedAt": "2026-10-24T04:07:14.816Z",
  "status": "Mining iron ore → selling into the GE bid",
  "stats": {
-  "totalLevel": 496,
+  "totalLevel": 497,
   "combatLevel": 35,
   "position": {
    "x": 3181,
@@ -25,7 +25,7 @@
    "Firemaking": 40,
    "Crafting": 1,
    "Smithing": 25,
-   "Mining": 87,
+   "Mining": 88,
    "Herblore": 1,
    "Agility": 1,
    "Thieving": 38,
@@ -46,6 +46,13 @@
    "where": "GE",
    "mark": 1,
    "value": 13707
+  },
+  {
+   "item": "Iron ore",
+   "qty": 26,
+   "where": "inventory",
+   "mark": 150,
+   "value": 3900
   },
   {
    "item": "Uncut emerald",
@@ -909,6 +916,11 @@
    "t": "2026-10-24T03:53:48.761Z",
    "coins": 76169,
    "netWorth": 83624
+  },
+  {
+   "t": "2026-10-24T04:07:14.810Z",
+   "coins": 76169,
+   "netWorth": 87524
   }
  ],
  "journal": [
@@ -1095,6 +1107,10 @@
   {
    "t": "2026-10-24T03:54:38.613Z",
    "msg": "Heading out to mine iron ore for the GE buy order."
+  },
+  {
+   "t": "2026-10-24T04:07:14.816Z",
+   "msg": "Trip 1: sold 26 iron ore at 150gp into the GE bid. Coins 76,169, net worth 87,524gp."
   }
  ],
  "geSeen": {
