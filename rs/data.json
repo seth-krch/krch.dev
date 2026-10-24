@@ -1,7 +1,7 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T04:07:14.816Z",
+ "updatedAt": "2026-10-24T04:08:03.945Z",
  "status": "Mining iron ore → selling into the GE bid",
  "stats": {
   "totalLevel": 497,
@@ -35,17 +35,17 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 62437,
+   "qty": 65312,
    "where": "inventory",
    "mark": 1,
-   "value": 62437
+   "value": 65312
   },
   {
    "item": "Coins",
-   "qty": 13707,
+   "qty": 10832,
    "where": "GE",
    "mark": 1,
-   "value": 13707
+   "value": 10832
   },
   {
    "item": "Iron ore",
@@ -1111,6 +1111,18 @@
   {
    "t": "2026-10-24T04:07:14.816Z",
    "msg": "Trip 1: sold 26 iron ore at 150gp into the GE bid. Coins 76,169, net worth 87,524gp."
+  },
+  {
+   "t": "2026-10-24T04:07:31.184Z",
+   "msg": "Switched to GE market making: bidding just above the best bid and relisting just under the best ask on steel bar, air rune, law rune."
+  },
+  {
+   "t": "2026-10-24T04:07:48.345Z",
+   "msg": "Cancelled my buy order for Air rune (25/600 filled) to free a GE slot."
+  },
+  {
+   "t": "2026-10-24T04:08:03.945Z",
+   "msg": "Heading out to mine iron ore for the GE buy order."
   }
  ],
  "geSeen": {
@@ -1292,15 +1304,6 @@
    "state": "open",
    "remaining": 29,
    "price": 208,
-   "items": 0,
-   "coins": 0
-  },
-  {
-   "name": "Air rune",
-   "side": "buy",
-   "state": "open",
-   "remaining": 575,
-   "price": 5,
    "items": 0,
    "coins": 0
   },
