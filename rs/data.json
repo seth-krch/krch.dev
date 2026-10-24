@@ -1,10 +1,10 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T00:41:52.415Z",
+ "updatedAt": "2026-10-24T00:45:16.735Z",
  "status": "Mining iron ore → selling into the GE bid",
  "stats": {
-  "totalLevel": 476,
+  "totalLevel": 477,
   "combatLevel": 35,
   "position": {
    "x": 3181,
@@ -25,7 +25,7 @@
    "Firemaking": 40,
    "Crafting": 1,
    "Smithing": 25,
-   "Mining": 67,
+   "Mining": 68,
    "Herblore": 1,
    "Agility": 1,
    "Thieving": 38,
@@ -42,17 +42,10 @@
   },
   {
    "item": "Coins",
-   "qty": 5885,
+   "qty": 9590,
    "where": "inventory",
    "mark": 1,
-   "value": 5885
-  },
-  {
-   "item": "Iron ore",
-   "qty": 19,
-   "where": "inventory",
-   "mark": 150,
-   "value": 2850
+   "value": 9590
   },
   {
    "item": "Feather",
@@ -120,7 +113,7 @@
   {
    "item": "Knife",
    "qty": 1,
-   "where": "inventory",
+   "where": "bank",
    "mark": 120,
    "value": 120
   },
@@ -146,13 +139,6 @@
    "value": 25
   },
   {
-   "item": "Wooden shield",
-   "qty": 1,
-   "where": "inventory",
-   "mark": 20,
-   "value": 20
-  },
-  {
    "item": "Bronze pickaxe",
    "qty": 1,
    "where": "inventory",
@@ -160,9 +146,16 @@
    "value": 20
   },
   {
+   "item": "Wooden shield",
+   "qty": 1,
+   "where": "bank",
+   "mark": 20,
+   "value": 20
+  },
+  {
    "item": "Hammer",
    "qty": 1,
-   "where": "inventory",
+   "where": "bank",
    "mark": 20,
    "value": 20
   },
@@ -259,6 +252,18 @@
   {
    "name": "Shrimps",
    "count": 5
+  },
+  {
+   "name": "Wooden shield",
+   "count": 1
+  },
+  {
+   "name": "Knife",
+   "count": 1
+  },
+  {
+   "name": "Hammer",
+   "count": 1
   }
  ],
  "trades": [
@@ -463,6 +468,18 @@
    "total": 3278,
    "counterparty": "GE",
    "note": "tax 172gp"
+  },
+  {
+   "id": 18,
+   "t": "2026-10-24T00:45:12.839Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 26,
+   "price": 142.5,
+   "total": 3705,
+   "counterparty": "GE",
+   "note": "tax 195gp"
   }
  ],
  "history": [
@@ -535,6 +552,11 @@
    "t": "2026-10-24T00:41:35.505Z",
    "coins": 16590,
    "netWorth": 23270
+  },
+  {
+   "t": "2026-10-24T00:45:16.732Z",
+   "coins": 20295,
+   "netWorth": 24125
   }
  ],
  "journal": [
@@ -621,6 +643,10 @@
   {
    "t": "2026-10-24T00:41:52.415Z",
    "msg": "Heading out to mine iron ore for the GE buy order."
+  },
+  {
+   "t": "2026-10-24T00:45:16.735Z",
+   "msg": "Trip 1: sold 26 iron ore at 150gp into the GE bid. Coins 20,295, net worth 24,125gp."
   }
  ],
  "geSeen": {
@@ -688,6 +714,11 @@
    "filled": 23,
    "gross": 3450,
    "tax": 172
+  },
+  "30410": {
+   "filled": 26,
+   "gross": 3900,
+   "tax": 195
   }
  },
  "geOffers": [
