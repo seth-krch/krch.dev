@@ -1,10 +1,10 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T03:19:17.228Z",
+ "updatedAt": "2026-10-24T03:40:19.071Z",
  "status": "Mining iron ore → selling into the GE bid",
  "stats": {
-  "totalLevel": 495,
+  "totalLevel": 496,
   "combatLevel": 35,
   "position": {
    "x": 3181,
@@ -25,7 +25,7 @@
    "Firemaking": 40,
    "Crafting": 1,
    "Smithing": 25,
-   "Mining": 86,
+   "Mining": 87,
    "Herblore": 1,
    "Agility": 1,
    "Thieving": 38,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 55733,
+   "qty": 59296,
    "where": "inventory",
    "mark": 1,
-   "value": 55733
+   "value": 59296
   },
   {
    "item": "Coins",
@@ -130,6 +130,13 @@
    "where": "bank",
    "mark": 35,
    "value": 140
+  },
+  {
+   "item": "Air rune",
+   "qty": 25,
+   "where": "inventory",
+   "mark": 5,
+   "value": 125
   },
   {
    "item": "Knife",
@@ -707,6 +714,29 @@
    "total": 3705,
    "counterparty": "GE",
    "note": "tax 195gp"
+  },
+  {
+   "id": 36,
+   "t": "2026-10-24T03:40:14.159Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Air rune",
+   "qty": 25,
+   "price": 5,
+   "total": -125,
+   "counterparty": "GE"
+  },
+  {
+   "id": 37,
+   "t": "2026-10-24T03:40:16.564Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 25,
+   "price": 142.52,
+   "total": 3563,
+   "counterparty": "GE",
+   "note": "tax 187gp"
   }
  ],
  "history": [
@@ -859,6 +889,11 @@
    "t": "2026-10-24T03:19:17.225Z",
    "coins": 70738,
    "netWorth": 79068
+  },
+  {
+   "t": "2026-10-24T03:40:19.070Z",
+   "coins": 74301,
+   "netWorth": 82756
   }
  ],
  "journal": [
@@ -1025,6 +1060,10 @@
   {
    "t": "2026-10-24T03:19:17.228Z",
    "msg": "Trip 1: sold 26 iron ore at 150gp into the GE bid. Coins 70,738, net worth 79,068gp."
+  },
+  {
+   "t": "2026-10-24T03:40:19.071Z",
+   "msg": "Trip 2: sold 25 iron ore at 150gp into the GE bid. Coins 74,301, net worth 82,756gp."
   }
  ],
  "geSeen": {
@@ -1077,6 +1116,11 @@
    "filled": 1,
    "gross": 2500,
    "tax": 125
+  },
+  "30259": {
+   "filled": 25,
+   "gross": 125,
+   "tax": 0
   },
   "30288": {
    "filled": 1,
@@ -1182,6 +1226,11 @@
    "filled": 26,
    "gross": 3900,
    "tax": 195
+  },
+  "30948": {
+   "filled": 25,
+   "gross": 3750,
+   "tax": 187
   }
  },
  "geOffers": [
