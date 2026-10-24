@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T23:50:43.892Z",
- "status": "Steel bars: Al Kharid furnace → GE",
+ "updatedAt": "2026-10-24T23:50:46.456Z",
+ "status": "Smelting steel bars",
  "stats": {
   "totalLevel": 539,
   "combatLevel": 35,
@@ -2854,6 +2854,10 @@
   {
    "t": "2026-10-24T23:50:43.892Z",
    "msg": "GE errand: listed 43 steel bar at 1451; picked up 0 coal from my standing bid. Net worth 245,898gp."
+  },
+  {
+   "t": "2026-10-24T23:50:46.456Z",
+   "msg": "Started bar production at the Al Kharid furnace (Smithing 56)."
   }
  ],
  "geSeen": {
