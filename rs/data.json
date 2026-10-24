@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T07:18:34.208Z",
- "status": "Market making on the Grand Exchange",
+ "updatedAt": "2026-10-24T07:19:23.072Z",
+ "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 505,
   "combatLevel": 35,
@@ -1548,6 +1548,10 @@
   {
    "t": "2026-10-24T07:18:34.208Z",
    "msg": "Market-making cycle 1: coins 138,730, net worth 146,340gp."
+  },
+  {
+   "t": "2026-10-24T07:19:23.072Z",
+   "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
   }
  ],
  "geSeen": {
