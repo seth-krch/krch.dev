@@ -1,7 +1,7 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T08:53:26.270Z",
+ "updatedAt": "2026-10-24T09:03:23.625Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 508,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 120433,
+   "qty": 123641,
    "where": "inventory",
    "mark": 1,
-   "value": 120433
+   "value": 123641
   },
   {
    "item": "Coins",
@@ -46,6 +46,13 @@
    "where": "GE",
    "mark": 1,
    "value": 59890
+  },
+  {
+   "item": "Iron ore",
+   "qty": 23,
+   "where": "inventory",
+   "mark": 150,
+   "value": 3450
   },
   {
    "item": "Uncut emerald",
@@ -1173,6 +1180,30 @@
    "total": 3420,
    "counterparty": "GE",
    "note": "tax 180gp"
+  },
+  {
+   "id": 75,
+   "t": "2026-10-24T09:03:13.650Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Air rune",
+   "qty": 45,
+   "price": 22.8,
+   "total": 1026,
+   "counterparty": "GE",
+   "note": "tax 54gp"
+  },
+  {
+   "id": 76,
+   "t": "2026-10-24T09:03:17.102Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Adamantite ore",
+   "qty": 2,
+   "price": 1091,
+   "total": 2182,
+   "counterparty": "GE",
+   "note": "tax 114gp"
   }
  ],
  "history": [
@@ -1515,6 +1546,11 @@
    "t": "2026-10-24T08:53:22.644Z",
    "coins": 180348,
    "netWorth": 188228
+  },
+  {
+   "t": "2026-10-24T09:03:23.621Z",
+   "coins": 183556,
+   "netWorth": 194886
   }
  ],
  "journal": [
@@ -1921,6 +1957,10 @@
   {
    "t": "2026-10-24T08:53:26.270Z",
    "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
+  },
+  {
+   "t": "2026-10-24T09:03:23.625Z",
+   "msg": "Trip 1: sold 2 adamantite ore at 1148gp into the GE bids. Coins 183,556, net worth 194,886gp."
   }
  ],
  "geSeen": {
@@ -2273,6 +2313,16 @@
    "filled": 24,
    "gross": 3600,
    "tax": 180
+  },
+  "31822": {
+   "filled": 45,
+   "gross": 1080,
+   "tax": 54
+  },
+  "31847": {
+   "filled": 2,
+   "gross": 2296,
+   "tax": 114
   }
  },
  "geOffers": [
