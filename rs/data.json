@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T21:58:50.336Z",
+ "updatedAt": "2026-10-24T22:09:58.579Z",
  "status": "Smelting steel bars",
  "stats": {
-  "totalLevel": 518,
+  "totalLevel": 527,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3275,
+   "z": 3185
   },
   "skills": {
    "Attack": 28,
@@ -24,7 +24,7 @@
    "Fishing": 36,
    "Firemaking": 40,
    "Crafting": 1,
-   "Smithing": 35,
+   "Smithing": 44,
    "Mining": 99,
    "Herblore": 1,
    "Agility": 1,
@@ -48,11 +48,11 @@
    "value": 72177
   },
   {
-   "item": "Coal",
-   "qty": 54,
-   "where": "inventory",
-   "mark": 125,
-   "value": 6750
+   "item": "Steel bar",
+   "qty": 16,
+   "where": "bank",
+   "mark": 223,
+   "value": 3568
   },
   {
    "item": "Uncut emerald",
@@ -76,6 +76,13 @@
    "value": 1800
   },
   {
+   "item": "Steel bar",
+   "qty": 8,
+   "where": "inventory",
+   "mark": 223,
+   "value": 1784
+  },
+  {
    "item": "Feather",
    "qty": 30,
    "where": "bank",
@@ -90,18 +97,18 @@
    "value": 600
   },
   {
+   "item": "Coal",
+   "qty": 4,
+   "where": "bank",
+   "mark": 125,
+   "value": 500
+  },
+  {
    "item": "Iron ore",
    "qty": 3,
    "where": "bank",
    "mark": 150,
    "value": 450
-  },
-  {
-   "item": "Earth rune",
-   "qty": 4,
-   "where": "bank",
-   "mark": 110,
-   "value": 440
   },
   {
    "item": "Raw shrimps",
@@ -118,6 +125,13 @@
    "value": 324
   },
   {
+   "item": "Earth rune",
+   "qty": 4,
+   "where": "bank",
+   "mark": 80,
+   "value": 320
+  },
+  {
    "item": "Headless arrow",
    "qty": 30,
    "where": "bank",
@@ -130,6 +144,13 @@
    "where": "bank",
    "mark": 100,
    "value": 300
+  },
+  {
+   "item": "Coal",
+   "qty": 2,
+   "where": "inventory",
+   "mark": 125,
+   "value": 250
   },
   {
    "item": "Bronze arrow",
@@ -350,7 +371,11 @@
   },
   {
    "name": "Coal",
-   "count": 54
+   "count": 4
+  },
+  {
+   "name": "Steel bar",
+   "count": 16
   }
  ],
  "trades": [
@@ -1410,6 +1435,39 @@
    "price": 125,
    "total": -6500,
    "counterparty": "GE"
+  },
+  {
+   "id": 90,
+   "t": "2026-10-24T22:01:24.399Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 91,
+   "t": "2026-10-24T22:07:38.853Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 92,
+   "t": "2026-10-24T22:09:56.437Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
   }
  ],
  "history": [
@@ -1812,6 +1870,11 @@
    "t": "2026-10-24T21:57:16.001Z",
    "coins": 196696,
    "netWorth": 215624
+  },
+  {
+   "t": "2026-10-24T22:09:58.579Z",
+   "coins": 196696,
+   "netWorth": 214856
   }
  ],
  "journal": [
