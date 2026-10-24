@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T08:52:01.547Z",
- "status": "Mining adamantite ore + iron ore → selling into the GE bids",
+ "updatedAt": "2026-10-24T08:53:23.449Z",
+ "status": "Market making on the Grand Exchange",
  "stats": {
   "totalLevel": 508,
   "combatLevel": 35,
   "position": {
-   "x": 3300,
-   "z": 3313
+   "x": 3181,
+   "z": 3443
   },
   "skills": {
    "Attack": 28,
@@ -35,17 +35,17 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 120489,
+   "qty": 120433,
    "where": "inventory",
    "mark": 1,
-   "value": 120489
+   "value": 120433
   },
   {
    "item": "Coins",
-   "qty": 59834,
+   "qty": 59890,
    "where": "GE",
    "mark": 1,
-   "value": 59834
+   "value": 59890
   },
   {
    "item": "Uncut emerald",
@@ -88,13 +88,6 @@
    "where": "bank",
    "mark": 10,
    "value": 300
-  },
-  {
-   "item": "Air rune",
-   "qty": 45,
-   "where": "inventory",
-   "mark": 6,
-   "value": 270
   },
   {
    "item": "Air rune",
@@ -1517,6 +1510,11 @@
    "t": "2026-10-24T08:51:00.736Z",
    "coins": 180348,
    "netWorth": 188498
+  },
+  {
+   "t": "2026-10-24T08:53:22.644Z",
+   "coins": 180348,
+   "netWorth": 188228
   }
  ],
  "journal": [
@@ -1911,6 +1909,14 @@
   {
    "t": "2026-10-24T08:51:00.738Z",
    "msg": "Trip 5: sold 24 iron ore at 150gp into the GE bids. Coins 180,348, net worth 188,498gp."
+  },
+  {
+   "t": "2026-10-24T08:52:04.180Z",
+   "msg": "Switched to GE market making: bidding just above the best bid and relisting just under the best ask on steel bar, air rune, law rune."
+  },
+  {
+   "t": "2026-10-24T08:53:23.449Z",
+   "msg": "Market-making cycle 1: coins 180,348, net worth 188,228gp."
   }
  ],
  "geSeen": {
@@ -2271,7 +2277,7 @@
    "side": "buy",
    "state": "open",
    "remaining": 28,
-   "price": 218,
+   "price": 220,
    "items": 0,
    "coins": 0
   },
@@ -2281,7 +2287,7 @@
    "state": "open",
    "remaining": 455,
    "price": 6,
-   "items": 45,
+   "items": 0,
    "coins": 0
   },
   {
@@ -2290,6 +2296,15 @@
    "state": "open",
    "remaining": 1,
    "price": 50000,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Air rune",
+   "side": "sell",
+   "state": "open",
+   "remaining": 45,
+   "price": 24,
    "items": 0,
    "coins": 0
   },
