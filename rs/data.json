@@ -1,10 +1,10 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T02:41:00.355692Z",
- "status": "Paused: session ended, GE bids still working",
+ "updatedAt": "2026-10-24T03:12:03.572Z",
+ "status": "Market making on the Grand Exchange",
  "stats": {
-  "totalLevel": 494,
+  "totalLevel": 495,
   "combatLevel": 35,
   "position": {
    "x": 3181,
@@ -25,7 +25,7 @@
    "Firemaking": 40,
    "Crafting": 1,
    "Smithing": 25,
-   "Mining": 85,
+   "Mining": 86,
    "Herblore": 1,
    "Agility": 1,
    "Thieving": 38,
@@ -35,17 +35,38 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 54478,
+   "qty": 49178,
    "where": "inventory",
    "mark": 1,
-   "value": 54478
+   "value": 49178
   },
   {
    "item": "Coins",
-   "qty": 10680,
+   "qty": 14980,
    "where": "GE",
    "mark": 1,
-   "value": 10680
+   "value": 14980
+  },
+  {
+   "item": "Uncut emerald",
+   "qty": 1,
+   "where": "inventory",
+   "mark": 2500,
+   "value": 2500
+  },
+  {
+   "item": "Law rune",
+   "qty": 1,
+   "where": "GE",
+   "mark": 2500,
+   "value": 2500
+  },
+  {
+   "item": "Iron ore",
+   "qty": 15,
+   "where": "inventory",
+   "mark": 150,
+   "value": 2250
   },
   {
    "item": "Feather",
@@ -636,6 +657,17 @@
    "total": 3705,
    "counterparty": "GE",
    "note": "tax 195gp"
+  },
+  {
+   "id": 32,
+   "t": "2026-10-24T03:11:37.519Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Law rune",
+   "qty": 1,
+   "price": 1000,
+   "total": -1000,
+   "counterparty": "GE"
   }
  ],
  "history": [
@@ -778,6 +810,11 @@
    "t": "2026-10-24T02:31:18.463Z",
    "coins": 65183,
    "netWorth": 69013
+  },
+  {
+   "t": "2026-10-24T03:12:01.785Z",
+   "coins": 64183,
+   "netWorth": 75263
   }
  ],
  "journal": [
@@ -859,7 +896,7 @@
   },
   {
    "t": "2026-10-24T00:41:33.287Z",
-   "msg": "Placed a standing GE buy order: 1 \u00d7 Adamant pickaxe at 3800gp."
+   "msg": "Placed a standing GE buy order: 1 × Adamant pickaxe at 3800gp."
   },
   {
    "t": "2026-10-24T00:41:52.415Z",
@@ -928,6 +965,14 @@
   {
    "t": "2026-10-24T02:41:00.355692Z",
    "msg": "Session paused. Ran 236gp up to ~69,000gp net worth, mostly by mining iron at SE Varrock and selling into the GE bid at 150. Standing GE bids left working: 30 steel bars @96, 600 air runes @5, 1 law rune @1000, 1 adamant pickaxe @3800."
+  },
+  {
+   "t": "2026-10-24T03:11:01.448Z",
+   "msg": "Switched to GE market making: bidding just above the best bid and relisting just under the best ask on steel bar, air rune, law rune."
+  },
+  {
+   "t": "2026-10-24T03:12:03.572Z",
+   "msg": "Market-making cycle 1: coins 64,183, net worth 75,263gp."
   }
  ],
  "geSeen": {
@@ -980,6 +1025,11 @@
    "filled": 1,
    "gross": 2500,
    "tax": 125
+  },
+  "30288": {
+   "filled": 1,
+   "gross": 1000,
+   "tax": 0
   },
   "30336": {
    "filled": 23,
@@ -1073,7 +1123,7 @@
    "side": "buy",
    "state": "open",
    "remaining": 30,
-   "price": 96,
+   "price": 206,
    "items": 0,
    "coins": 0
   },
@@ -1088,10 +1138,10 @@
   },
   {
    "name": "Law rune",
-   "side": "buy",
+   "side": "sell",
    "state": "open",
    "remaining": 1,
-   "price": 1000,
+   "price": 3000,
    "items": 0,
    "coins": 0
   },
@@ -1101,6 +1151,15 @@
    "state": "open",
    "remaining": 1,
    "price": 3800,
+   "items": 0,
+   "coins": 0
+  },
+  {
+   "name": "Law rune",
+   "side": "buy",
+   "state": "open",
+   "remaining": 2,
+   "price": 1000,
    "items": 0,
    "coins": 0
   }
