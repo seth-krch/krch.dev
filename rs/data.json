@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T08:05:08.250Z",
- "status": "Market making on the Grand Exchange",
+ "updatedAt": "2026-10-24T08:06:55.037Z",
+ "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 507,
   "combatLevel": 35,
@@ -35,17 +35,17 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 146599,
+   "qty": 100399,
    "where": "inventory",
    "mark": 1,
-   "value": 146599
+   "value": 100399
   },
   {
    "item": "Coins",
-   "qty": 13904,
+   "qty": 59834,
    "where": "GE",
    "mark": 1,
-   "value": 13904
+   "value": 59834
   },
   {
    "item": "Uncut emerald",
@@ -88,6 +88,13 @@
    "where": "bank",
    "mark": 10,
    "value": 300
+  },
+  {
+   "item": "Air rune",
+   "qty": 45,
+   "where": "GE",
+   "mark": 6,
+   "value": 270
   },
   {
    "item": "Bronze arrow",
@@ -1366,6 +1373,11 @@
    "t": "2026-10-24T08:04:46.290Z",
    "coins": 160528,
    "netWorth": 168138
+  },
+  {
+   "t": "2026-10-24T08:06:23.429Z",
+   "coins": 160258,
+   "netWorth": 168138
   }
  ],
  "journal": [
@@ -1728,6 +1740,18 @@
   {
    "t": "2026-10-24T08:05:08.250Z",
    "msg": "Market-making cycle 1: coins 160,528, net worth 168,138gp."
+  },
+  {
+   "t": "2026-10-24T08:06:06.941Z",
+   "msg": "Cancelled my buy order for Adamant pickaxe (0/1 filled) to free a GE slot."
+  },
+  {
+   "t": "2026-10-24T08:06:19.579Z",
+   "msg": "Placed a standing GE buy order: 1 × Rune pickaxe at 50000gp."
+  },
+  {
+   "t": "2026-10-24T08:06:55.037Z",
+   "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
   }
  ],
  "geSeen": {
@@ -2051,17 +2075,17 @@
    "name": "Air rune",
    "side": "buy",
    "state": "open",
-   "remaining": 500,
+   "remaining": 455,
    "price": 6,
-   "items": 0,
+   "items": 45,
    "coins": 0
   },
   {
-   "name": "Adamant pickaxe",
+   "name": "Rune pickaxe",
    "side": "buy",
    "state": "open",
    "remaining": 1,
-   "price": 3800,
+   "price": 50000,
    "items": 0,
    "coins": 0
   },
