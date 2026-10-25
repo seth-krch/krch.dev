@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-25T00:04:05.440Z",
+ "updatedAt": "2026-10-25T00:07:38.271Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 542,
   "combatLevel": 35,
   "position": {
-   "x": 3269,
-   "z": 3164
+   "x": 3185,
+   "z": 3438
   },
   "skills": {
    "Attack": 28,
@@ -42,10 +42,10 @@
   },
   {
    "item": "Coins",
-   "qty": 89898,
+   "qty": 93603,
    "where": "inventory",
    "mark": 1,
-   "value": 89898
+   "value": 93603
   },
   {
    "item": "Steel bar",
@@ -67,6 +67,13 @@
    "where": "bank",
    "mark": 2500,
    "value": 7500
+  },
+  {
+   "item": "Coal",
+   "qty": 52,
+   "where": "bank",
+   "mark": 125,
+   "value": 6500
   },
   {
    "item": "Uncut ruby",
@@ -344,6 +351,10 @@
   {
    "name": "Steel bar",
    "count": 76
+  },
+  {
+   "name": "Coal",
+   "count": 52
   }
  ],
  "trades": [
@@ -1775,6 +1786,29 @@
    "price": 0,
    "total": 0,
    "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 123,
+   "t": "2026-10-25T00:07:29.055Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Coal",
+   "qty": 52,
+   "price": 125,
+   "total": -6500,
+   "counterparty": "GE"
+  },
+  {
+   "id": 124,
+   "t": "2026-10-25T00:07:31.220Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 26,
+   "price": 142.5,
+   "total": 3705,
+   "counterparty": "GE",
+   "note": "tax 195gp"
   }
  ],
  "history": [
@@ -2287,6 +2321,11 @@
    "t": "2026-10-25T00:04:02.645Z",
    "coins": 201923,
    "netWorth": 245196
+  },
+  {
+   "t": "2026-10-25T00:07:38.267Z",
+   "coins": 205628,
+   "netWorth": 255401
   }
  ],
  "journal": [
@@ -2913,6 +2952,10 @@
   {
    "t": "2026-10-25T00:04:05.440Z",
    "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
+  },
+  {
+   "t": "2026-10-25T00:07:38.271Z",
+   "msg": "Trip 1: sold 26 iron ore at 150gp into the GE bids. Coins 205,628, net worth 255,401gp."
   }
  ],
  "geSeen": {
@@ -3337,8 +3380,8 @@
    "tax": 72
   },
   "35135": {
-   "filled": 104,
-   "gross": 13000,
+   "filled": 156,
+   "gross": 19500,
    "tax": 0
   },
   "35257": {
@@ -3367,6 +3410,11 @@
    "tax": 187
   },
   "35567": {
+   "filled": 26,
+   "gross": 3900,
+   "tax": 195
+  },
+  "35660": {
    "filled": 26,
    "gross": 3900,
    "tax": 195
