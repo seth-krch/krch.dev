@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-25T01:01:45.209Z",
+ "updatedAt": "2026-10-25T01:07:59.780Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 542,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3185,
+   "z": 3438
   },
   "skills": {
    "Attack": 28,
@@ -35,10 +35,10 @@
  "holdings": [
   {
    "item": "Coins",
-   "qty": 128703,
+   "qty": 130698,
    "where": "inventory",
    "mark": 1,
-   "value": 128703
+   "value": 130698
   },
   {
    "item": "Coins",
@@ -56,10 +56,10 @@
   },
   {
    "item": "Coal",
-   "qty": 130,
+   "qty": 156,
    "where": "bank",
    "mark": 125,
-   "value": 16250
+   "value": 19500
   },
   {
    "item": "Uncut emerald",
@@ -350,7 +350,7 @@
   },
   {
    "name": "Coal",
-   "count": 130
+   "count": 156
   },
   {
    "name": "Uncut sapphire",
@@ -1974,6 +1974,29 @@
    "total": 3705,
    "counterparty": "GE",
    "note": "tax 195gp"
+  },
+  {
+   "id": 139,
+   "t": "2026-10-25T01:07:51.918Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Coal",
+   "qty": 26,
+   "price": 125,
+   "total": -3250,
+   "counterparty": "GE"
+  },
+  {
+   "id": 140,
+   "t": "2026-10-25T01:07:53.980Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 14,
+   "price": 142.5,
+   "total": 1995,
+   "counterparty": "GE",
+   "note": "tax 105gp"
   }
  ],
  "history": [
@@ -2541,6 +2564,11 @@
    "t": "2026-10-25T01:01:45.207Z",
    "coins": 230978,
    "netWorth": 293001
+  },
+  {
+   "t": "2026-10-25T01:07:59.779Z",
+   "coins": 232973,
+   "netWorth": 298246
   }
  ],
  "journal": [
@@ -3223,6 +3251,10 @@
   {
    "t": "2026-10-25T01:01:45.209Z",
    "msg": "Trip 6: sold 26 iron ore at 150gp into the GE bids. Coins 230,978, net worth 293,001gp."
+  },
+  {
+   "t": "2026-10-25T01:07:59.780Z",
+   "msg": "Trip 7: sold 14 iron ore at 150gp into the GE bids. Coins 232,973, net worth 298,246gp."
   }
  ],
  "geSeen": {
@@ -3647,8 +3679,8 @@
    "tax": 72
   },
   "35135": {
-   "filled": 234,
-   "gross": 29250,
+   "filled": 260,
+   "gross": 32500,
    "tax": 0
   },
   "35257": {
@@ -3740,6 +3772,11 @@
    "filled": 26,
    "gross": 3900,
    "tax": 195
+  },
+  "36020": {
+   "filled": 14,
+   "gross": 2100,
+   "tax": 105
   }
  },
  "geOffers": [
