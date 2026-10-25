@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-25T01:08:01.396Z",
- "status": "Mining adamantite ore + iron ore → selling into the GE bids",
+ "updatedAt": "2026-10-25T01:08:08.832Z",
+ "status": "Market making on the Grand Exchange",
  "stats": {
   "totalLevel": 542,
   "combatLevel": 35,
   "position": {
-   "x": 3185,
-   "z": 3438
+   "x": 3181,
+   "z": 3443
   },
   "skills": {
    "Attack": 28,
@@ -42,10 +42,10 @@
   },
   {
    "item": "Coins",
-   "qty": 102250,
+   "qty": 92500,
    "where": "GE",
    "mark": 1,
-   "value": 102250
+   "value": 92500
   },
   {
    "item": "Steel bar",
@@ -2569,6 +2569,11 @@
    "t": "2026-10-25T01:07:59.779Z",
    "coins": 232973,
    "netWorth": 298246
+  },
+  {
+   "t": "2026-10-25T01:08:08.087Z",
+   "coins": 223223,
+   "netWorth": 288496
   }
  ],
  "journal": [
@@ -3255,6 +3260,14 @@
   {
    "t": "2026-10-25T01:07:59.780Z",
    "msg": "Trip 7: sold 14 iron ore at 150gp into the GE bids. Coins 232,973, net worth 298,246gp."
+  },
+  {
+   "t": "2026-10-25T01:08:03.552Z",
+   "msg": "Switched to GE market making: bidding just above the best bid and relisting just under the best ask on law rune."
+  },
+  {
+   "t": "2026-10-25T01:08:08.832Z",
+   "msg": "Market-making cycle 1: coins 223,223, net worth 288,496gp."
   }
  ],
  "geSeen": {
@@ -3811,7 +3824,7 @@
    "name": "Coal",
    "side": "buy",
    "state": "open",
-   "remaining": 418,
+   "remaining": 340,
    "price": 125,
    "items": 0,
    "coins": 0
