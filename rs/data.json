@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-25T00:17:32.615Z",
+ "updatedAt": "2026-10-25T00:24:37.020Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 542,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3185,
+   "z": 3438
   },
   "skills": {
    "Attack": 28,
@@ -42,10 +42,10 @@
   },
   {
    "item": "Coins",
-   "qty": 101962,
+   "qty": 105667,
    "where": "inventory",
    "mark": 1,
-   "value": 101962
+   "value": 105667
   },
   {
    "item": "Steel bar",
@@ -53,6 +53,13 @@
    "where": "bank",
    "mark": 223,
    "value": 16948
+  },
+  {
+   "item": "Coal",
+   "qty": 78,
+   "where": "bank",
+   "mark": 125,
+   "value": 9750
   },
   {
    "item": "Steel bar",
@@ -67,13 +74,6 @@
    "where": "bank",
    "mark": 2500,
    "value": 7500
-  },
-  {
-   "item": "Coal",
-   "qty": 52,
-   "where": "bank",
-   "mark": 125,
-   "value": 6500
   },
   {
    "item": "Uncut ruby",
@@ -354,7 +354,7 @@
   },
   {
    "name": "Coal",
-   "count": 52
+   "count": 78
   }
  ],
  "trades": [
@@ -1845,6 +1845,29 @@
    "total": 3705,
    "counterparty": "GE",
    "note": "tax 195gp"
+  },
+  {
+   "id": 128,
+   "t": "2026-10-25T00:24:28.065Z",
+   "venue": "GE",
+   "side": "buy",
+   "item": "Coal",
+   "qty": 26,
+   "price": 125,
+   "total": -3250,
+   "counterparty": "GE"
+  },
+  {
+   "id": 129,
+   "t": "2026-10-25T00:24:31.015Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 26,
+   "price": 142.5,
+   "total": 3705,
+   "counterparty": "GE",
+   "note": "tax 195gp"
   }
  ],
  "history": [
@@ -2372,6 +2395,11 @@
    "t": "2026-10-25T00:17:32.613Z",
    "coins": 213987,
    "netWorth": 263760
+  },
+  {
+   "t": "2026-10-25T00:24:37.017Z",
+   "coins": 217692,
+   "netWorth": 270715
   }
  ],
  "journal": [
@@ -3010,6 +3038,10 @@
   {
    "t": "2026-10-25T00:17:32.615Z",
    "msg": "Trip 3: sold 26 iron ore at 150gp into the GE bids. Coins 213,987, net worth 263,760gp."
+  },
+  {
+   "t": "2026-10-25T00:24:37.020Z",
+   "msg": "Trip 4: sold 26 iron ore at 150gp into the GE bids. Coins 217,692, net worth 270,715gp."
   }
  ],
  "geSeen": {
@@ -3434,8 +3466,8 @@
    "tax": 72
   },
   "35135": {
-   "filled": 156,
-   "gross": 19500,
+   "filled": 182,
+   "gross": 22750,
    "tax": 0
   },
   "35257": {
@@ -3484,6 +3516,11 @@
    "tax": 187
   },
   "35711": {
+   "filled": 26,
+   "gross": 3900,
+   "tax": 195
+  },
+  "35746": {
    "filled": 26,
    "gross": 3900,
    "tax": 195
