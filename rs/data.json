@@ -1,8 +1,8 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-25T00:26:20.989Z",
- "status": "Steel bars: Al Kharid furnace → GE",
+ "updatedAt": "2026-10-25T00:26:40.558Z",
+ "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 542,
   "combatLevel": 35,
@@ -3048,6 +3048,10 @@
   {
    "t": "2026-10-25T00:26:20.989Z",
    "msg": "GE errand: listed 119 steel bar at 1406; picked up 0 coal from my standing bid. Net worth 260,965gp."
+  },
+  {
+   "t": "2026-10-25T00:26:40.558Z",
+   "msg": "Heading out to mine adamantite ore + iron ore for the GE buy orders."
   }
  ],
  "geSeen": {
