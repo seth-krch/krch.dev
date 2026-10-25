@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-25T00:07:38.271Z",
+ "updatedAt": "2026-10-25T00:13:58.305Z",
  "status": "Mining adamantite ore + iron ore → selling into the GE bids",
  "stats": {
   "totalLevel": 542,
   "combatLevel": 35,
   "position": {
-   "x": 3185,
-   "z": 3438
+   "x": 3181,
+   "z": 3443
   },
   "skills": {
    "Attack": 28,
@@ -42,10 +42,10 @@
   },
   {
    "item": "Coins",
-   "qty": 93603,
+   "qty": 98257,
    "where": "inventory",
    "mark": 1,
-   "value": 93603
+   "value": 98257
   },
   {
    "item": "Steel bar",
@@ -1809,6 +1809,30 @@
    "total": 3705,
    "counterparty": "GE",
    "note": "tax 195gp"
+  },
+  {
+   "id": 125,
+   "t": "2026-10-25T00:13:51.892Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Adamantite ore",
+   "qty": 1,
+   "price": 1091,
+   "total": 1091,
+   "counterparty": "GE",
+   "note": "tax 57gp"
+  },
+  {
+   "id": 126,
+   "t": "2026-10-25T00:13:53.962Z",
+   "venue": "GE",
+   "side": "sell",
+   "item": "Iron ore",
+   "qty": 25,
+   "price": 142.52,
+   "total": 3563,
+   "counterparty": "GE",
+   "note": "tax 187gp"
   }
  ],
  "history": [
@@ -2326,6 +2350,11 @@
    "t": "2026-10-25T00:07:38.267Z",
    "coins": 205628,
    "netWorth": 255401
+  },
+  {
+   "t": "2026-10-25T00:13:58.302Z",
+   "coins": 210282,
+   "netWorth": 260055
   }
  ],
  "journal": [
@@ -2956,6 +2985,10 @@
   {
    "t": "2026-10-25T00:07:38.271Z",
    "msg": "Trip 1: sold 26 iron ore at 150gp into the GE bids. Coins 205,628, net worth 255,401gp."
+  },
+  {
+   "t": "2026-10-25T00:13:58.305Z",
+   "msg": "Trip 2: sold 1 adamantite ore at 1148gp, 25 iron ore at 150gp into the GE bids. Coins 210,282, net worth 260,055gp."
   }
  ],
  "geSeen": {
@@ -3418,6 +3451,16 @@
    "filled": 26,
    "gross": 3900,
    "tax": 195
+  },
+  "35691": {
+   "filled": 1,
+   "gross": 1148,
+   "tax": 57
+  },
+  "35692": {
+   "filled": 25,
+   "gross": 3750,
+   "tax": 187
   }
  },
  "geOffers": [
