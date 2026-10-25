@@ -1,14 +1,14 @@
 {
  "bot": "PIfvHy1OU",
  "startedAt": "2026-10-23T22:06:23.859Z",
- "updatedAt": "2026-10-24T23:50:46.456Z",
+ "updatedAt": "2026-10-25T00:02:26.253Z",
  "status": "Smelting steel bars",
  "stats": {
-  "totalLevel": 539,
+  "totalLevel": 542,
   "combatLevel": 35,
   "position": {
-   "x": 3181,
-   "z": 3443
+   "x": 3275,
+   "z": 3185
   },
   "skills": {
    "Attack": 28,
@@ -24,7 +24,7 @@
    "Fishing": 36,
    "Firemaking": 40,
    "Crafting": 1,
-   "Smithing": 56,
+   "Smithing": 59,
    "Mining": 99,
    "Herblore": 1,
    "Agility": 1,
@@ -49,10 +49,10 @@
   },
   {
    "item": "Steel bar",
-   "qty": 50,
-   "where": "inventory",
+   "qty": 66,
+   "where": "bank",
    "mark": 223,
-   "value": 11150
+   "value": 14718
   },
   {
    "item": "Steel bar",
@@ -69,18 +69,18 @@
    "value": 7500
   },
   {
-   "item": "Coal",
-   "qty": 52,
-   "where": "bank",
-   "mark": 125,
-   "value": 6500
-  },
-  {
    "item": "Uncut ruby",
    "qty": 1,
    "where": "bank",
    "mark": 2501,
    "value": 2501
+  },
+  {
+   "item": "Steel bar",
+   "qty": 8,
+   "where": "inventory",
+   "mark": 223,
+   "value": 1784
   },
   {
    "item": "Iron bar",
@@ -144,6 +144,20 @@
    "where": "bank",
    "mark": 100,
    "value": 300
+  },
+  {
+   "item": "Coal",
+   "qty": 2,
+   "where": "inventory",
+   "mark": 125,
+   "value": 250
+  },
+  {
+   "item": "Coal",
+   "qty": 2,
+   "where": "bank",
+   "mark": 125,
+   "value": 250
   },
   {
    "item": "Bronze arrow",
@@ -350,7 +364,11 @@
   },
   {
    "name": "Coal",
-   "count": 52
+   "count": 2
+  },
+  {
+   "name": "Steel bar",
+   "count": 66
   }
  ],
  "trades": [
@@ -1738,6 +1756,39 @@
    "total": 3705,
    "counterparty": "GE",
    "note": "tax 195gp"
+  },
+  {
+   "id": 119,
+   "t": "2026-10-24T23:57:38.947Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 120,
+   "t": "2026-10-24T23:59:53.391Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
+  },
+  {
+   "id": 121,
+   "t": "2026-10-25T00:02:24.173Z",
+   "venue": "skilling",
+   "side": "gather",
+   "item": "Steel bar",
+   "qty": 8,
+   "price": 0,
+   "total": 0,
+   "note": "smelted at Al Kharid"
   }
  ],
  "history": [
@@ -2240,6 +2291,11 @@
    "t": "2026-10-24T23:49:23.928Z",
    "coins": 201923,
    "netWorth": 245898
+  },
+  {
+   "t": "2026-10-25T00:02:26.253Z",
+   "coins": 201923,
+   "netWorth": 245250
   }
  ],
  "journal": [
